@@ -69,7 +69,7 @@ class Collection extends DataCollection
 
     protected function getExportAction($id)
     {
-        $exportUrl = $this->context->getUrl('check24_orderimport/export/product', ['id' => $id]);
+        $exportUrl = $this->context->getUrl('check24shopping_orderimport/export/product', ['id' => $id]);
 
         return sprintf('<a href="%s">Export</a>', $exportUrl);
     }

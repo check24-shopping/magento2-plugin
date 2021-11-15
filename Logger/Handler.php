@@ -17,5 +17,5 @@ class Handler extends Base
      * File name
      * @var string
      */
-    protected $fileName = '/var/log/check24_orderimport.log';
+    protected $fileName = '/var/log/check24shopping_orderimport.log';
 }

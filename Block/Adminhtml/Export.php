@@ -10,7 +10,7 @@ class Export extends Container
     protected function _construct()
     {
         $this->_controller = 'adminhtml_export';
-        $this->_blockGroup = 'Check24_orderimportProductExport';
+        $this->_blockGroup = 'Check24Shopping_orderimportProductExport';
         $this->_headerText = __('CHECK24 Product Exports');
 
         parent::_construct();

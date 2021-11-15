@@ -8,7 +8,7 @@ use Magento\Framework\Model\AbstractModel;
 
 class Check24Shipment extends AbstractModel implements Check24ShipmentInterface
 {
-    private const MODEL_NAME = 'check24_orderimport_shipment';
+    private const MODEL_NAME = 'check24shopping_orderimport_shipment';
 
     /** @var string */
     const CACHE_TAG = self::MODEL_NAME;

@@ -14,7 +14,7 @@ class Action extends AbstractRenderer
                 'Export'
             ) . '"
             href="' .
-            $this->getUrl('check24_orderimport/export/product', ['id' => $row->getId()]) .
+            $this->getUrl('check24shopping_orderimport/export/product', ['id' => $row->getId()]) .
             '">' . __('Export') . '</a>';
     }
 }

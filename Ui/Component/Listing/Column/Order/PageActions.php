@@ -13,7 +13,7 @@ class PageActions extends Column
             foreach ($dataSource['data']['items'] as &$item) {
                 if ($item['error_message'] != '') {
                     $item['action'] = sprintf('<a href="%s">%s</a>',
-                        $this->getContext()->getUrl('check24_orderimport/orderimport/retry', ['id' => $item['id']]),
+                        $this->getContext()->getUrl('check24shopping_orderimport/orderimport/retry', ['id' => $item['id']]),
                         __('Retry')
                     );
                 } else {

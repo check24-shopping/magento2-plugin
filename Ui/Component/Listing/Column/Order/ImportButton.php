@@ -44,6 +44,6 @@ class ImportButton extends GenericButton implements ButtonProviderInterface
      */
     public function getProcessUrl()
     {
-        return $this->getUrl('check24_orderimport/orderimport/import');
+        return $this->getUrl('check24shopping_orderimport/orderimport/import');
     }
 }

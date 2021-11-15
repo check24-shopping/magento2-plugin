@@ -20,7 +20,7 @@ This README would normally document whatever steps are necessary to get your app
 ### Module registieren und aktivieren. ###
 
 ```
-$ bin/magento module:enable Check24_OrderImport
+$ bin/magento module:enable Check24Shopping_OrderImport
 $ bin/magento setup:upgrade
 $ bin/magento cache:flush
 ```

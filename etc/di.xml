@@ -86,7 +86,7 @@
         </arguments>
     </type>
     <type name="\Magento\Sales\Block\Adminhtml\Order\View">
-        <plugin name="Check24_OrderImport::sendOrderView" type="Check24Shopping\OrderImport\Plugin\PluginBtnOrderView"/>
+        <plugin name="Check24Shopping_OrderImport::sendOrderView" type="Check24Shopping\OrderImport\Plugin\PluginBtnOrderView"/>
     </type>
     <!-- 2.2 -> 2.1 changes -->
     <virtualType name="Check24Shopping\OrderImport\Model\ResourceModel\OrderImport\Grid\Collection"
@@ -101,7 +101,7 @@
     <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
         <arguments>
             <argument name="collections" xsi:type="array">
-                <item name="check24_orderimportorder_listing_data_source" xsi:type="string">
+                <item name="check24shopping_orderimportorder_listing_data_source" xsi:type="string">
                     Check24Shopping\OrderImport\Model\ResourceModel\OrderImport\Grid\Collection
                 </item>
             </argument>
