@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Model\Payment;
+namespace Check24Shopping\OrderImport\Model\Payment;
 
 use Magento\Payment\Model\Method\AbstractMethod;
 

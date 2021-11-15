@@ -1,8 +1,8 @@
 <?php
 
-namespace Check24\OrderImport\Console\Command;
+namespace Check24Shopping\OrderImport\Console\Command;
 
-use Check24\OrderImport\Model\Task\ProcessOrderTask;
+use Check24Shopping\OrderImport\Model\Task\ProcessOrderTask;
 use Magento\Framework\App\Area;
 use Magento\Framework\App\AreaList;
 use Magento\Framework\App\ObjectManager;

@@ -1,11 +1,11 @@
 <?php
 
-namespace Check24\OrderImport\Model;
+namespace Check24Shopping\OrderImport\Model;
 
-use Check24\OrderImport\Api\Data\DynamicConfigInterface;
-use Check24\OrderImport\Api\Data\DynamicConfigInterfaceFactory;
-use Check24\OrderImport\Api\DynamicConfigRepositoryInterface;
-use Check24\OrderImport\Model\ResourceModel\DynamicConfig\CollectionFactory as DynamicConfigCollectionFactory;
+use Check24Shopping\OrderImport\Api\Data\DynamicConfigInterface;
+use Check24Shopping\OrderImport\Api\Data\DynamicConfigInterfaceFactory;
+use Check24Shopping\OrderImport\Api\DynamicConfigRepositoryInterface;
+use Check24Shopping\OrderImport\Model\ResourceModel\DynamicConfig\CollectionFactory as DynamicConfigCollectionFactory;
 
 class DynamicConfigRepository implements DynamicConfigRepositoryInterface
 {

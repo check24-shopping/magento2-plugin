@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Block\Adminhtml;
+namespace Check24Shopping\OrderImport\Block\Adminhtml;
 
 use Magento\Backend\Block\Widget\Grid\Container;
 

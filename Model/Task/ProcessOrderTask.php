@@ -1,18 +1,18 @@
 <?php
 
-namespace Check24\OrderImport\Model\Task;
+namespace Check24Shopping\OrderImport\Model\Task;
 
-use Check24\OrderImport\Api\Data\OrderImportInterface;
-use Check24\OrderImport\Api\OrderImportProviderInterface;
-use Check24\OrderImport\Api\OrderImportRepositoryInterface;
-use Check24\OrderImport\Api\OrderManagementInterface;
-use Check24\OrderImport\Helper\Config\OrderConfig;
-use Check24\OrderImport\Model\Exception\MissingMatchingStore;
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDataAddressInterface;
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDataPartyInterface;
-use Check24\OrderImport\Model\Reader\OpenTrans\Xml\OpenTransOrderDocument;
-use Check24\OrderImport\Model\Task\Model\ProcessOrderResult;
-use Check24\OrderImport\Service\Mapping\NewMappingService;
+use Check24Shopping\OrderImport\Api\Data\OrderImportInterface;
+use Check24Shopping\OrderImport\Api\OrderImportProviderInterface;
+use Check24Shopping\OrderImport\Api\OrderImportRepositoryInterface;
+use Check24Shopping\OrderImport\Api\OrderManagementInterface;
+use Check24Shopping\OrderImport\Helper\Config\OrderConfig;
+use Check24Shopping\OrderImport\Model\Exception\MissingMatchingStore;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDataAddressInterface;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDataPartyInterface;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\Xml\OpenTransOrderDocument;
+use Check24Shopping\OrderImport\Model\Task\Model\ProcessOrderResult;
+use Check24Shopping\OrderImport\Service\Mapping\NewMappingService;
 use Exception;
 use Magento\Catalog\Api\ProductRepositoryInterface;
 use Magento\Framework\Exception\CouldNotSaveException;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Check24\OrderImport\Model\Adminhtml\System\Config\Source;
+namespace Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source;
 
-use Check24\OrderImport\Helper\Config\OrderConfig;
+use Check24Shopping\OrderImport\Helper\Config\OrderConfig;
 
 class Cron
 {

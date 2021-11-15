@@ -3,9 +3,9 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
     <event name="sales_order_shipment_save_after">
         <observer name="sales_order_shipment_save_after"
-                  instance="Check24\OrderImport\Observer\OrderShipmentAfter"/>
+                  instance="Check24Shopping\OrderImport\Observer\OrderShipmentAfter"/>
     </event>
     <event name="order_cancel_after">
-        <observer name="order_cancel_after" instance="Check24\OrderImport\Observer\OrderCancelAfter"/>
+        <observer name="order_cancel_after" instance="Check24Shopping\OrderImport\Observer\OrderCancelAfter"/>
     </event>
 </config>

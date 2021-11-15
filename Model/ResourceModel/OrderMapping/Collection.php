@@ -1,10 +1,10 @@
 <?php
 
-namespace Check24\OrderImport\Model\ResourceModel\OrderMapping;
+namespace Check24Shopping\OrderImport\Model\ResourceModel\OrderMapping;
 
-use Check24\OrderImport\Api\Data\OrderMappingInterface;
-use Check24\OrderImport\Model\OrderMapping;
-use Check24\OrderImport\Model\ResourceModel\OrderMapping as ResourceModel;
+use Check24Shopping\OrderImport\Api\Data\OrderMappingInterface;
+use Check24Shopping\OrderImport\Model\OrderMapping;
+use Check24Shopping\OrderImport\Model\ResourceModel\OrderMapping as ResourceModel;
 use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 
 class Collection extends AbstractCollection

@@ -2,99 +2,99 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
 
-    <preference for="Check24\OrderImport\Api\Data\DynamicConfigInterface"
-                type="Check24\OrderImport\Model\DynamicConfig"/>
-    <preference for="Check24\OrderImport\Api\DynamicConfigRepositoryInterface"
-                type="Check24\OrderImport\Model\DynamicConfigRepository"/>
-    <preference for="Check24\OrderImport\Api\DynamicConfigProviderInterface"
-                type="Check24\OrderImport\Model\DynamicConfigProvider"/>
+    <preference for="Check24Shopping\OrderImport\Api\Data\DynamicConfigInterface"
+                type="Check24Shopping\OrderImport\Model\DynamicConfig"/>
+    <preference for="Check24Shopping\OrderImport\Api\DynamicConfigRepositoryInterface"
+                type="Check24Shopping\OrderImport\Model\DynamicConfigRepository"/>
+    <preference for="Check24Shopping\OrderImport\Api\DynamicConfigProviderInterface"
+                type="Check24Shopping\OrderImport\Model\DynamicConfigProvider"/>
 
-    <preference for="Check24\OrderImport\Api\Data\Check24ShipmentInterface"
-                type="Check24\OrderImport\Model\Check24Shipment"/>
-    <preference for="Check24\OrderImport\Api\Check24ShipmentRepositoryInterface"
-                type="Check24\OrderImport\Model\Check24ShipmentRepository"/>
-    <preference for="Check24\OrderImport\Api\Check24ShipmentProviderInterface"
-                type="Check24\OrderImport\Model\Check24ShipmentProvider"/>
+    <preference for="Check24Shopping\OrderImport\Api\Data\Check24ShipmentInterface"
+                type="Check24Shopping\OrderImport\Model\Check24Shipment"/>
+    <preference for="Check24Shopping\OrderImport\Api\Check24ShipmentRepositoryInterface"
+                type="Check24Shopping\OrderImport\Model\Check24ShipmentRepository"/>
+    <preference for="Check24Shopping\OrderImport\Api\Check24ShipmentProviderInterface"
+                type="Check24Shopping\OrderImport\Model\Check24ShipmentProvider"/>
 
-    <preference for="Check24\OrderImport\Api\Data\Check24CancelInterface"
-                type="Check24\OrderImport\Model\Check24Cancel"/>
-    <preference for="Check24\OrderImport\Api\Check24CancelRepositoryInterface"
-                type="Check24\OrderImport\Model\Check24CancelRepository"/>
-    <preference for="Check24\OrderImport\Api\Check24CancelProviderInterface"
-                type="Check24\OrderImport\Model\Check24CancelProvider"/>
+    <preference for="Check24Shopping\OrderImport\Api\Data\Check24CancelInterface"
+                type="Check24Shopping\OrderImport\Model\Check24Cancel"/>
+    <preference for="Check24Shopping\OrderImport\Api\Check24CancelRepositoryInterface"
+                type="Check24Shopping\OrderImport\Model\Check24CancelRepository"/>
+    <preference for="Check24Shopping\OrderImport\Api\Check24CancelProviderInterface"
+                type="Check24Shopping\OrderImport\Model\Check24CancelProvider"/>
 
-    <preference for="Check24\OrderImport\Api\Data\Check24ReturnInterface"
-                type="Check24\OrderImport\Model\Check24Return"/>
-    <preference for="Check24\OrderImport\Api\Check24ReturnRepositoryInterface"
-                type="Check24\OrderImport\Model\Check24ReturnRepository"/>
-    <preference for="Check24\OrderImport\Api\Check24ReturnProviderInterface"
-                type="Check24\OrderImport\Model\Check24ReturnProvider"/>
+    <preference for="Check24Shopping\OrderImport\Api\Data\Check24ReturnInterface"
+                type="Check24Shopping\OrderImport\Model\Check24Return"/>
+    <preference for="Check24Shopping\OrderImport\Api\Check24ReturnRepositoryInterface"
+                type="Check24Shopping\OrderImport\Model\Check24ReturnRepository"/>
+    <preference for="Check24Shopping\OrderImport\Api\Check24ReturnProviderInterface"
+                type="Check24Shopping\OrderImport\Model\Check24ReturnProvider"/>
 
-    <preference for="Check24\OrderImport\Api\Data\DocumentTrackingInterface"
-                type="Check24\OrderImport\Model\DocumentTracking"/>
-    <preference for="Check24\OrderImport\Api\DocumentTrackingRepositoryInterface"
-                type="Check24\OrderImport\Model\DocumentTrackingRepository"/>
-    <preference for="Check24\OrderImport\Api\DocumentTrackingProviderInterface"
-                type="Check24\OrderImport\Model\DocumentTrackingProvider"/>
+    <preference for="Check24Shopping\OrderImport\Api\Data\DocumentTrackingInterface"
+                type="Check24Shopping\OrderImport\Model\DocumentTracking"/>
+    <preference for="Check24Shopping\OrderImport\Api\DocumentTrackingRepositoryInterface"
+                type="Check24Shopping\OrderImport\Model\DocumentTrackingRepository"/>
+    <preference for="Check24Shopping\OrderImport\Api\DocumentTrackingProviderInterface"
+                type="Check24Shopping\OrderImport\Model\DocumentTrackingProvider"/>
 
-    <preference for="Check24\OrderImport\Api\Data\OrderMappingInterface" type="Check24\OrderImport\Model\OrderMapping"/>
-    <preference for="Check24\OrderImport\Api\OrderMappingRepositoryInterface"
-                type="Check24\OrderImport\Model\OrderMappingRepository"/>
-    <preference for="Check24\OrderImport\Api\Data\OrderMappingSearchResultsInterface"
+    <preference for="Check24Shopping\OrderImport\Api\Data\OrderMappingInterface" type="Check24Shopping\OrderImport\Model\OrderMapping"/>
+    <preference for="Check24Shopping\OrderImport\Api\OrderMappingRepositoryInterface"
+                type="Check24Shopping\OrderImport\Model\OrderMappingRepository"/>
+    <preference for="Check24Shopping\OrderImport\Api\Data\OrderMappingSearchResultsInterface"
                 type="Magento\Framework\Api\SearchResults"/>
 
-    <preference for="Check24\OrderImport\Api\Data\OrderPositionMappingInterface"
-                type="Check24\OrderImport\Model\OrderPositionMapping"/>
-    <preference for="Check24\OrderImport\Api\OrderPositionMappingRepositoryInterface"
-                type="Check24\OrderImport\Model\OrderPositionMappingRepository"/>
+    <preference for="Check24Shopping\OrderImport\Api\Data\OrderPositionMappingInterface"
+                type="Check24Shopping\OrderImport\Model\OrderPositionMapping"/>
+    <preference for="Check24Shopping\OrderImport\Api\OrderPositionMappingRepositoryInterface"
+                type="Check24Shopping\OrderImport\Model\OrderPositionMappingRepository"/>
 
-    <preference for="Check24\OrderImport\Api\Data\OrderImportInterface" type="Check24\OrderImport\Model\OrderImport"/>
-    <preference for="Check24\OrderImport\Api\OrderImportRepositoryInterface"
-                type="Check24\OrderImport\Model\OrderImportRepository"/>
-    <preference for="Check24\OrderImport\Api\OrderImportProviderInterface"
-                type="Check24\OrderImport\Model\OrderImportProvider"/>
-    <preference for="Check24\OrderImport\Api\OrderManagementInterface"
-                type="Check24\OrderImport\Model\OrderManagement"/>
-    <preference for="Check24\OrderImport\Api\Data\OrderImportSearchResultsInterface"
+    <preference for="Check24Shopping\OrderImport\Api\Data\OrderImportInterface" type="Check24Shopping\OrderImport\Model\OrderImport"/>
+    <preference for="Check24Shopping\OrderImport\Api\OrderImportRepositoryInterface"
+                type="Check24Shopping\OrderImport\Model\OrderImportRepository"/>
+    <preference for="Check24Shopping\OrderImport\Api\OrderImportProviderInterface"
+                type="Check24Shopping\OrderImport\Model\OrderImportProvider"/>
+    <preference for="Check24Shopping\OrderImport\Api\OrderManagementInterface"
+                type="Check24Shopping\OrderImport\Model\OrderManagement"/>
+    <preference for="Check24Shopping\OrderImport\Api\Data\OrderImportSearchResultsInterface"
                 type="Magento\Framework\Api\SearchResults"/>
 
     <type name="Magento\Framework\Console\CommandList">
         <arguments>
             <argument name="commands" xsi:type="array">
                 <item name="check24_import_order" xsi:type="object">
-                    Check24\OrderImport\Console\Command\ImportOrderCommand
+                    Check24Shopping\OrderImport\Console\Command\ImportOrderCommand
                 </item>
                 <item name="check24_process_order" xsi:type="object">
-                    Check24\OrderImport\Console\Command\ProcessOrderCommand
+                    Check24Shopping\OrderImport\Console\Command\ProcessOrderCommand
                 </item>
             </argument>
         </arguments>
     </type>
 
-    <type name="Check24\OrderImport\Logger\Handler">
+    <type name="Check24Shopping\OrderImport\Logger\Handler">
         <arguments>
             <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
         </arguments>
     </type>
 
-    <type name="Check24\OrderImport\Logger\Logger">
+    <type name="Check24Shopping\OrderImport\Logger\Logger">
         <arguments>
             <argument name="name" xsi:type="string">check24Logger</argument>
             <argument name="handlers" xsi:type="array">
-                <item name="system" xsi:type="object">Check24\OrderImport\Logger\Handler</item>
+                <item name="system" xsi:type="object">Check24Shopping\OrderImport\Logger\Handler</item>
             </argument>
         </arguments>
     </type>
     <type name="\Magento\Sales\Block\Adminhtml\Order\View">
-        <plugin name="Check24_OrderImport::sendOrderView" type="Check24\OrderImport\Plugin\PluginBtnOrderView"/>
+        <plugin name="Check24_OrderImport::sendOrderView" type="Check24Shopping\OrderImport\Plugin\PluginBtnOrderView"/>
     </type>
     <!-- 2.2 -> 2.1 changes -->
-    <virtualType name="Check24\OrderImport\Model\ResourceModel\OrderImport\Grid\Collection"
+    <virtualType name="Check24Shopping\OrderImport\Model\ResourceModel\OrderImport\Grid\Collection"
                  type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
         <arguments>
             <argument name="mainTable" xsi:type="string">check24_strict_orders</argument>
             <argument name="resourceModel" xsi:type="string">
-                Check24\OrderImport\Model\ResourceModel\OrderImport
+                Check24Shopping\OrderImport\Model\ResourceModel\OrderImport
             </argument>
         </arguments>
     </virtualType>
@@ -102,7 +102,7 @@
         <arguments>
             <argument name="collections" xsi:type="array">
                 <item name="check24_orderimportorder_listing_data_source" xsi:type="string">
-                    Check24\OrderImport\Model\ResourceModel\OrderImport\Grid\Collection
+                    Check24Shopping\OrderImport\Model\ResourceModel\OrderImport\Grid\Collection
                 </item>
             </argument>
         </arguments>

@@ -1,9 +1,9 @@
 <?php
 
-namespace Check24\OrderImport\Model;
+namespace Check24Shopping\OrderImport\Model;
 
-use Check24\OrderImport\Api\Data\Check24CancelInterface;
-use Check24\OrderImport\Model\ResourceModel\Check24Cancel as ResourceModel;
+use Check24Shopping\OrderImport\Api\Data\Check24CancelInterface;
+use Check24Shopping\OrderImport\Model\ResourceModel\Check24Cancel as ResourceModel;
 use Magento\Framework\Model\AbstractModel;
 
 class Check24Cancel extends AbstractModel implements Check24CancelInterface

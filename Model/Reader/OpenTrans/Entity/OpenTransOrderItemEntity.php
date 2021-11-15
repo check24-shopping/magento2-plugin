@@ -1,8 +1,8 @@
 <?php
 
-namespace Check24\OrderImport\Model\Reader\OpenTrans\Entity;
+namespace Check24Shopping\OrderImport\Model\Reader\OpenTrans\Entity;
 
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDataOrderItemInterface;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDataOrderItemInterface;
 
 final class OpenTransOrderItemEntity implements OpenTransDataOrderItemInterface
 {

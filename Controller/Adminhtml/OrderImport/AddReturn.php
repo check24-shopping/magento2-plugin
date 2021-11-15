@@ -1,9 +1,9 @@
 <?php
 
-namespace Check24\OrderImport\Controller\Adminhtml\OrderImport;
+namespace Check24Shopping\OrderImport\Controller\Adminhtml\OrderImport;
 
-use Check24\OrderImport\Api\Check24ReturnRepositoryInterface;
-use Check24\OrderImport\Api\Data\Check24ReturnInterfaceFactory;
+use Check24Shopping\OrderImport\Api\Check24ReturnRepositoryInterface;
+use Check24Shopping\OrderImport\Api\Data\Check24ReturnInterfaceFactory;
 use Exception;
 use Magento\Backend\App\Action;
 

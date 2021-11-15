@@ -1,10 +1,10 @@
 <?php
 
-namespace Check24\OrderImport\Plugin;
+namespace Check24Shopping\OrderImport\Plugin;
 
-use Check24\OrderImport\Api\Check24ReturnRepositoryInterface;
-use Check24\OrderImport\Api\DynamicConfigRepositoryInterface;
-use Check24\OrderImport\Api\OrderMappingRepositoryInterface;
+use Check24Shopping\OrderImport\Api\Check24ReturnRepositoryInterface;
+use Check24Shopping\OrderImport\Api\DynamicConfigRepositoryInterface;
+use Check24Shopping\OrderImport\Api\OrderMappingRepositoryInterface;
 use Magento\Backend\Model\UrlInterface;
 use Magento\Framework\ObjectManagerInterface;
 use Magento\Sales\Block\Adminhtml\Order\View;

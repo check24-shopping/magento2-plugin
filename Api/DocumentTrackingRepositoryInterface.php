@@ -1,8 +1,8 @@
 <?php
 
-namespace Check24\OrderImport\Api;
+namespace Check24Shopping\OrderImport\Api;
 
-use Check24\OrderImport\Api\Data\DocumentTrackingInterface;
+use Check24Shopping\OrderImport\Api\Data\DocumentTrackingInterface;
 
 interface DocumentTrackingRepositoryInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Check24\OrderImport\Api;
+namespace Check24Shopping\OrderImport\Api;
 
-use Check24\OrderImport\Api\Data\OrderPositionMappingInterface;
-use Check24\OrderImport\Model\OrderPositionMapping;
+use Check24Shopping\OrderImport\Api\Data\OrderPositionMappingInterface;
+use Check24Shopping\OrderImport\Model\OrderPositionMapping;
 
 interface OrderPositionMappingRepositoryInterface
 {

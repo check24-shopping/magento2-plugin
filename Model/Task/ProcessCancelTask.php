@@ -1,16 +1,16 @@
 <?php
 
-namespace Check24\OrderImport\Model\Task;
+namespace Check24Shopping\OrderImport\Model\Task;
 
-use Check24\OrderImport\Api\Data\OrderImportInterface;
-use Check24\OrderImport\Api\OrderImportProviderInterface;
-use Check24\OrderImport\Api\OrderImportRepositoryInterface;
-use Check24\OrderImport\Helper\Config\OrderConfig;
-use Check24\OrderImport\Model\Exception\NoOrderMappingFound;
-use Check24\OrderImport\Model\OrderMappingRepository;
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDocumentInterface;
-use Check24\OrderImport\Model\Reader\OpenTrans\Xml\OpenTransOrderDocument;
-use Check24\OrderImport\Model\Task\Model\ProcessOrderResult;
+use Check24Shopping\OrderImport\Api\Data\OrderImportInterface;
+use Check24Shopping\OrderImport\Api\OrderImportProviderInterface;
+use Check24Shopping\OrderImport\Api\OrderImportRepositoryInterface;
+use Check24Shopping\OrderImport\Helper\Config\OrderConfig;
+use Check24Shopping\OrderImport\Model\Exception\NoOrderMappingFound;
+use Check24Shopping\OrderImport\Model\OrderMappingRepository;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDocumentInterface;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\Xml\OpenTransOrderDocument;
+use Check24Shopping\OrderImport\Model\Task\Model\ProcessOrderResult;
 use Exception;
 use Magento\Framework\Api\SearchCriteriaBuilder;
 use Magento\Sales\Api\OrderManagementInterface as MagentoOrderManagementInterface;

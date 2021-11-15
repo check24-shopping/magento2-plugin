@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Model\ResourceModel\OrderImport\Grid;
+namespace Check24Shopping\OrderImport\Model\ResourceModel\OrderImport\Grid;
 
 use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 
@@ -16,6 +16,6 @@ class Collection extends AbstractCollection
      */
     protected function _construct()
     {
-        $this->_init('Check24\OrderImport\Model\OrderImport', 'Check24\OrderImport\Model\ResourceModel\OrderImport');
+        $this->_init('Check24Shopping\OrderImport\Model\OrderImport', 'Check24Shopping\OrderImport\Model\ResourceModel\OrderImport');
     }
 }

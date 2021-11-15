@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Setup;
+namespace Check24Shopping\OrderImport\Setup;
 
 use Magento\Framework\Setup\InstallSchemaInterface;
 use Magento\Framework\Setup\ModuleContextInterface;

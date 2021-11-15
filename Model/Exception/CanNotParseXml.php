@@ -1,8 +1,8 @@
 <?php
 
-namespace Check24\OrderImport\Model\Exception;
+namespace Check24Shopping\OrderImport\Model\Exception;
 
-use Check24\OrderImport\Model\ValueObject\Interfaces\ErrorMessageInterface;
+use Check24Shopping\OrderImport\Model\ValueObject\Interfaces\ErrorMessageInterface;
 use Exception;
 use Throwable;
 

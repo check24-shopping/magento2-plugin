@@ -1,27 +1,27 @@
 <?php
 
-namespace Check24\OrderImport\Model\Task;
+namespace Check24Shopping\OrderImport\Model\Task;
 
-use Check24\OrderImport\Api\Check24ReturnProviderInterface;
-use Check24\OrderImport\Api\Check24ReturnRepositoryInterface;
-use Check24\OrderImport\Api\Data\Check24ReturnInterface;
-use Check24\OrderImport\Api\OrderManagementInterface;
-use Check24\OrderImport\Helper\Config\ApiConfiguration;
-use Check24\OrderImport\Helper\Config\OrderConfig;
-use Check24\OrderImport\Model\OrderMappingRepository;
-use Check24\OrderImport\Model\OrderPositionMappingRepository;
-use Check24\OrderImport\Model\Reader\OpenTrans\Entity\OpenTransAddressEntity;
-use Check24\OrderImport\Model\Reader\OpenTrans\Entity\OpenTransDeliveryPartyEntity;
-use Check24\OrderImport\Model\Reader\OpenTrans\Entity\OpenTransInvoicePartyEntity;
-use Check24\OrderImport\Model\Reader\OpenTrans\Entity\OpenTransOrderItemEntity;
-use Check24\OrderImport\Model\Reader\OpenTrans\Entity\OpenTransReturnResponseEntity;
-use Check24\OrderImport\Model\Reader\OpenTrans\Entity\OpenTransSupplierPartyEntity;
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDataOrderItemCollection;
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDataReturnResponseInterface;
-use Check24\OrderImport\Model\Task\Model\ProcessOrderResult;
-use Check24\OrderImport\Model\Writer\OpenTrans\OpenTransReturnResponse;
-use Check24\OrderImport\Service\Api\ApiConfigurationService;
-use Check24\OrderImport\Service\Api\ReturnResponseService;
+use Check24Shopping\OrderImport\Api\Check24ReturnProviderInterface;
+use Check24Shopping\OrderImport\Api\Check24ReturnRepositoryInterface;
+use Check24Shopping\OrderImport\Api\Data\Check24ReturnInterface;
+use Check24Shopping\OrderImport\Api\OrderManagementInterface;
+use Check24Shopping\OrderImport\Helper\Config\ApiConfiguration;
+use Check24Shopping\OrderImport\Helper\Config\OrderConfig;
+use Check24Shopping\OrderImport\Model\OrderMappingRepository;
+use Check24Shopping\OrderImport\Model\OrderPositionMappingRepository;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\Entity\OpenTransAddressEntity;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\Entity\OpenTransDeliveryPartyEntity;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\Entity\OpenTransInvoicePartyEntity;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\Entity\OpenTransOrderItemEntity;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\Entity\OpenTransReturnResponseEntity;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\Entity\OpenTransSupplierPartyEntity;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDataOrderItemCollection;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDataReturnResponseInterface;
+use Check24Shopping\OrderImport\Model\Task\Model\ProcessOrderResult;
+use Check24Shopping\OrderImport\Model\Writer\OpenTrans\OpenTransReturnResponse;
+use Check24Shopping\OrderImport\Service\Api\ApiConfigurationService;
+use Check24Shopping\OrderImport\Service\Api\ReturnResponseService;
 use Exception;
 use Magento\Sales\Api\OrderManagementInterface as MagentoOrderManagementInterface;
 use Magento\Sales\Api\OrderRepositoryInterface;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Check24\OrderImport\Controller\Adminhtml\OrderImport;
+namespace Check24Shopping\OrderImport\Controller\Adminhtml\OrderImport;
 
-use Check24\OrderImport\Api\OrderImportRepositoryInterface;
+use Check24Shopping\OrderImport\Api\OrderImportRepositoryInterface;
 use Exception;
 use Magento\Backend\App\Action;
 use Magento\Framework\Controller\ResultFactory;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Check24\OrderImport\Ui\Component\Listing\DataProvider;
+namespace Check24Shopping\OrderImport\Ui\Component\Listing\DataProvider;
 
-use Check24\OrderImport\Model\ResourceModel\OrderImport\CollectionFactory;
+use Check24Shopping\OrderImport\Model\ResourceModel\OrderImport\CollectionFactory;
 use Magento\Ui\DataProvider\AbstractDataProvider;
 
 class Order extends AbstractDataProvider

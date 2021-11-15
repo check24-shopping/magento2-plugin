@@ -1,10 +1,10 @@
 <?php
 
-namespace Check24\OrderImport\Model\ResourceModel\DynamicConfig;
+namespace Check24Shopping\OrderImport\Model\ResourceModel\DynamicConfig;
 
-use Check24\OrderImport\Api\Data\DynamicConfigInterface;
-use Check24\OrderImport\Model\DynamicConfig;
-use Check24\OrderImport\Model\ResourceModel\DynamicConfig as ResourceModel;
+use Check24Shopping\OrderImport\Api\Data\DynamicConfigInterface;
+use Check24Shopping\OrderImport\Model\DynamicConfig;
+use Check24Shopping\OrderImport\Model\ResourceModel\DynamicConfig as ResourceModel;
 use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 
 class Collection extends AbstractCollection

@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Helper\Config;
+namespace Check24Shopping\OrderImport\Helper\Config;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Framework\App\Helper\AbstractHelper;

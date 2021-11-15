@@ -1,8 +1,8 @@
 <?php
 
-namespace Check24\OrderImport\Block\Adminhtml\System\Config;
+namespace Check24Shopping\OrderImport\Block\Adminhtml\System\Config;
 
-use Check24\OrderImport\Block\Adminhtml\Form\Field\Attributes;
+use Check24Shopping\OrderImport\Block\Adminhtml\Form\Field\Attributes;
 use Magento\Config\Block\System\Config\Form\Field\FieldArray\AbstractFieldArray;
 use Magento\Framework\DataObject;
 
@@ -43,7 +43,7 @@ class Manufacturer extends AbstractFieldArray
     {
         if (!$this->_attributes) {
             $this->_attributes = $this->getLayout()->createBlock(
-                '\Check24\OrderImport\Block\Adminhtml\Form\Field\Attributes',
+                '\Check24Shopping\OrderImport\Block\Adminhtml\Form\Field\Attributes',
                 '',
                 ['data' => ['is_render_to_js_template' => true]]
             );

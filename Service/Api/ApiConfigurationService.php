@@ -1,11 +1,11 @@
 <?php
 
-namespace Check24\OrderImport\Service\Api;
+namespace Check24Shopping\OrderImport\Service\Api;
 
-use Check24\OrderImport\Helper\Config\ApiConfiguration;
-use Check24\OrderImport\Helper\Config\OrderConfig;
-use Check24\OrderImport\Helper\ConfigHelper;
-use Check24\OrderImport\Model\Exception\NoValidConfiguration;
+use Check24Shopping\OrderImport\Helper\Config\ApiConfiguration;
+use Check24Shopping\OrderImport\Helper\Config\OrderConfig;
+use Check24Shopping\OrderImport\Helper\ConfigHelper;
+use Check24Shopping\OrderImport\Model\Exception\NoValidConfiguration;
 use Magento\Store\Model\StoreManagerInterface;
 
 class ApiConfigurationService

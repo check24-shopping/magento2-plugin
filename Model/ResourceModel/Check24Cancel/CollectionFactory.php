@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Model\ResourceModel\Check24Cancel;
+namespace Check24Shopping\OrderImport\Model\ResourceModel\Check24Cancel;
 
 use Magento\Framework\ObjectManagerInterface;
 

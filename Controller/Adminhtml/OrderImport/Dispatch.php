@@ -1,9 +1,9 @@
 <?php
 
-namespace Check24\OrderImport\Controller\Adminhtml\OrderImport;
+namespace Check24Shopping\OrderImport\Controller\Adminhtml\OrderImport;
 
-use Check24\OrderImport\Model\Exception\CustomerMessageInterface;
-use Check24\OrderImport\Model\Task\SendDispatchNotificationTask;
+use Check24Shopping\OrderImport\Model\Exception\CustomerMessageInterface;
+use Check24Shopping\OrderImport\Model\Task\SendDispatchNotificationTask;
 use Exception;
 use Magento\Backend\App\Action;
 

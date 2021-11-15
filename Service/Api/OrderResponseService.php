@@ -1,9 +1,9 @@
 <?php
 
-namespace Check24\OrderImport\Service\Api;
+namespace Check24Shopping\OrderImport\Service\Api;
 
-use Check24\OrderImport\Helper\Config\ApiConfiguration;
-use Check24\OrderImport\Model\Writer\OpenTrans\OpenTransOrderResponse;
+use Check24Shopping\OrderImport\Helper\Config\ApiConfiguration;
+use Check24Shopping\OrderImport\Model\Writer\OpenTrans\OpenTransOrderResponse;
 use Magento\Framework\Webapi\Rest\Request;
 
 class OrderResponseService

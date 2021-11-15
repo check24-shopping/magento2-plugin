@@ -1,10 +1,10 @@
 <?php
 
-namespace Check24\OrderImport\Model\ResourceModel\DocumentTracking;
+namespace Check24Shopping\OrderImport\Model\ResourceModel\DocumentTracking;
 
-use Check24\OrderImport\Api\Data\DocumentTrackingInterface;
-use Check24\OrderImport\Model\DocumentTracking;
-use Check24\OrderImport\Model\ResourceModel\DocumentTracking as ResourceModel;
+use Check24Shopping\OrderImport\Api\Data\DocumentTrackingInterface;
+use Check24Shopping\OrderImport\Model\DocumentTracking;
+use Check24Shopping\OrderImport\Model\ResourceModel\DocumentTracking as ResourceModel;
 use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 
 class Collection extends AbstractCollection

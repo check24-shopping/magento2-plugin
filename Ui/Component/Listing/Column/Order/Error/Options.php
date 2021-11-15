@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Ui\Component\Listing\Column\Order\Error;
+namespace Check24Shopping\OrderImport\Ui\Component\Listing\Column\Order\Error;
 
 use Magento\Framework\Data\OptionSourceInterface;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Model\Task\Model;
+namespace Check24Shopping\OrderImport\Model\Task\Model;
 
 class ProcessOrderResult
 {

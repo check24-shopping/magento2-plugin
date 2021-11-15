@@ -1,12 +1,12 @@
 <?php
 
-namespace Check24\OrderImport\Model;
+namespace Check24Shopping\OrderImport\Model;
 
-use Check24\OrderImport\Api\Data\OrderImportInterface;
-use Check24\OrderImport\Api\Data\OrderImportSearchResultsInterface;
-use Check24\OrderImport\Api\OrderImportProviderInterface;
-use Check24\OrderImport\Api\OrderImportRepositoryInterface;
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDocumentInterface;
+use Check24Shopping\OrderImport\Api\Data\OrderImportInterface;
+use Check24Shopping\OrderImport\Api\Data\OrderImportSearchResultsInterface;
+use Check24Shopping\OrderImport\Api\OrderImportProviderInterface;
+use Check24Shopping\OrderImport\Api\OrderImportRepositoryInterface;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDocumentInterface;
 use Magento\Framework\Api\SearchCriteriaBuilder;
 
 class OrderImportProvider implements OrderImportProviderInterface

@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Model\Adminhtml\System\Config\Source;
+namespace Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source;
 
 use Magento\Catalog\Model\Product\AttributeSet\Options;
 

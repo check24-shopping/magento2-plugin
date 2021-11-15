@@ -1,9 +1,9 @@
 <?php
 
-namespace Check24\OrderImport\Model;
+namespace Check24Shopping\OrderImport\Model;
 
-use Check24\OrderImport\Api\Data\OrderMappingInterface;
-use Check24\OrderImport\Model\ResourceModel\OrderMapping as ResourceModel;
+use Check24Shopping\OrderImport\Api\Data\OrderMappingInterface;
+use Check24Shopping\OrderImport\Model\ResourceModel\OrderMapping as ResourceModel;
 use Magento\Framework\Model\AbstractModel;
 
 class OrderMapping extends AbstractModel implements OrderMappingInterface

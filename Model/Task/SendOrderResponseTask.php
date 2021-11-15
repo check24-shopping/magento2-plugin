@@ -1,17 +1,17 @@
 <?php
 
-namespace Check24\OrderImport\Model\Task;
+namespace Check24Shopping\OrderImport\Model\Task;
 
-use Check24\OrderImport\Api\OrderImportProviderInterface;
-use Check24\OrderImport\Api\OrderImportRepositoryInterface;
-use Check24\OrderImport\Api\OrderManagementInterface;
-use Check24\OrderImport\Helper\Config\ApiConfiguration;
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDataOrderInterface;
-use Check24\OrderImport\Model\Reader\OpenTrans\Xml\OpenTransOrderDocument;
-use Check24\OrderImport\Model\Task\Model\ProcessOrderResult;
-use Check24\OrderImport\Model\Writer\OpenTrans\OpenTransOrderResponse;
-use Check24\OrderImport\Service\Api\ApiConfigurationService;
-use Check24\OrderImport\Service\Api\OrderResponseService;
+use Check24Shopping\OrderImport\Api\OrderImportProviderInterface;
+use Check24Shopping\OrderImport\Api\OrderImportRepositoryInterface;
+use Check24Shopping\OrderImport\Api\OrderManagementInterface;
+use Check24Shopping\OrderImport\Helper\Config\ApiConfiguration;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDataOrderInterface;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\Xml\OpenTransOrderDocument;
+use Check24Shopping\OrderImport\Model\Task\Model\ProcessOrderResult;
+use Check24Shopping\OrderImport\Model\Writer\OpenTrans\OpenTransOrderResponse;
+use Check24Shopping\OrderImport\Service\Api\ApiConfigurationService;
+use Check24Shopping\OrderImport\Service\Api\OrderResponseService;
 use Exception;
 use Magento\Quote\Api\CartManagementInterface;
 

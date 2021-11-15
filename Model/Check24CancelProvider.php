@@ -1,10 +1,10 @@
 <?php
 
-namespace Check24\OrderImport\Model;
+namespace Check24Shopping\OrderImport\Model;
 
-use Check24\OrderImport\Api\Check24CancelProviderInterface;
-use Check24\OrderImport\Api\Check24CancelRepositoryInterface;
-use Check24\OrderImport\Api\Data\Check24CancelInterface;
+use Check24Shopping\OrderImport\Api\Check24CancelProviderInterface;
+use Check24Shopping\OrderImport\Api\Check24CancelRepositoryInterface;
+use Check24Shopping\OrderImport\Api\Data\Check24CancelInterface;
 use Magento\Framework\Api\SearchCriteriaBuilder;
 
 class Check24CancelProvider implements Check24CancelProviderInterface

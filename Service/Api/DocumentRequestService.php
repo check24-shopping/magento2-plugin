@@ -1,12 +1,12 @@
 <?php
 
-namespace Check24\OrderImport\Service\Api;
+namespace Check24Shopping\OrderImport\Service\Api;
 
-use Check24\OrderImport\Api\DynamicConfigRepositoryInterface;
-use Check24\OrderImport\Helper\Config\ApiConfiguration;
-use Check24\OrderImport\Model\Exception\CanNotParseXml;
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDocumentInterface;
-use Check24\OrderImport\Model\Reader\OpenTrans\Xml\OpenTransDocument;
+use Check24Shopping\OrderImport\Api\DynamicConfigRepositoryInterface;
+use Check24Shopping\OrderImport\Helper\Config\ApiConfiguration;
+use Check24Shopping\OrderImport\Model\Exception\CanNotParseXml;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDocumentInterface;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\Xml\OpenTransDocument;
 use Psr\Http\Message\ResponseInterface;
 use Throwable;
 

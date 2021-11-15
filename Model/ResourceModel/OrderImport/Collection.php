@@ -1,9 +1,9 @@
 <?php
 
-namespace Check24\OrderImport\Model\ResourceModel\OrderImport;
+namespace Check24Shopping\OrderImport\Model\ResourceModel\OrderImport;
 
-use Check24\OrderImport\Model\OrderImport as Model;
-use Check24\OrderImport\Model\ResourceModel\OrderImport as ResourceModel;
+use Check24Shopping\OrderImport\Model\OrderImport as Model;
+use Check24Shopping\OrderImport\Model\ResourceModel\OrderImport as ResourceModel;
 use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 
 class Collection extends AbstractCollection

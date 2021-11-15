@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Model\Exception;
+namespace Check24Shopping\OrderImport\Model\Exception;
 
 interface CustomerMessageInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Setup;
+namespace Check24Shopping\OrderImport\Setup;
 
 use Magento\Framework\DB\Ddl\Table;
 use Magento\Framework\Setup\SchemaSetupInterface;

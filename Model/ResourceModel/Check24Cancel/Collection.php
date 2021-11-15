@@ -1,9 +1,9 @@
 <?php
 
-namespace Check24\OrderImport\Model\ResourceModel\Check24Cancel;
+namespace Check24Shopping\OrderImport\Model\ResourceModel\Check24Cancel;
 
-use Check24\OrderImport\Model\Check24Cancel as Model;
-use Check24\OrderImport\Model\ResourceModel\Check24Cancel as ResourceModel;
+use Check24Shopping\OrderImport\Model\Check24Cancel as Model;
+use Check24Shopping\OrderImport\Model\ResourceModel\Check24Cancel as ResourceModel;
 use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 
 class Collection extends AbstractCollection

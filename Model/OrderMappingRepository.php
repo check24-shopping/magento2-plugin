@@ -1,11 +1,11 @@
 <?php
 
-namespace Check24\OrderImport\Model;
+namespace Check24Shopping\OrderImport\Model;
 
-use Check24\OrderImport\Api\Data\OrderMappingInterface;
-use Check24\OrderImport\Api\Data\OrderMappingInterfaceFactory;
-use Check24\OrderImport\Api\OrderMappingRepositoryInterface;
-use Check24\OrderImport\Model\ResourceModel\OrderMapping\CollectionFactory as OrderMappingCollectionFactory;
+use Check24Shopping\OrderImport\Api\Data\OrderMappingInterface;
+use Check24Shopping\OrderImport\Api\Data\OrderMappingInterfaceFactory;
+use Check24Shopping\OrderImport\Api\OrderMappingRepositoryInterface;
+use Check24Shopping\OrderImport\Model\ResourceModel\OrderMapping\CollectionFactory as OrderMappingCollectionFactory;
 use Magento\Framework\Stdlib\DateTime\DateTimeFactory;
 
 class OrderMappingRepository implements OrderMappingRepositoryInterface

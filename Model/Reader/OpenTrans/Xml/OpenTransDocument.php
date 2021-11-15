@@ -1,9 +1,9 @@
 <?php
 
-namespace Check24\OrderImport\Model\Reader\OpenTrans\Xml;
+namespace Check24Shopping\OrderImport\Model\Reader\OpenTrans\Xml;
 
-use Check24\OrderImport\Model\Exception\DocumentIdMissing;
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDocumentInterface;
+use Check24Shopping\OrderImport\Model\Exception\DocumentIdMissing;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDocumentInterface;
 use DOMDocument;
 use DOMElement;
 

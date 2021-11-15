@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Api\Data;
+namespace Check24Shopping\OrderImport\Api\Data;
 
 interface Check24CancelInterface
 {

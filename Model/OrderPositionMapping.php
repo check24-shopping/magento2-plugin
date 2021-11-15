@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Check24\OrderImport\Model;
+namespace Check24Shopping\OrderImport\Model;
 
 
-use Check24\OrderImport\Api\Data\OrderPositionMappingInterface;
-use Check24\OrderImport\Model\ResourceModel\OrderPositionMapping as ResourceModel;
+use Check24Shopping\OrderImport\Api\Data\OrderPositionMappingInterface;
+use Check24Shopping\OrderImport\Model\ResourceModel\OrderPositionMapping as ResourceModel;
 use Magento\Framework\Model\AbstractModel;
 
 class OrderPositionMapping extends AbstractModel implements OrderPositionMappingInterface

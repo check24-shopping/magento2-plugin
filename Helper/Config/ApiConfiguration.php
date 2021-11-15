@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Helper\Config;
+namespace Check24Shopping\OrderImport\Helper\Config;
 
 class ApiConfiguration
 {

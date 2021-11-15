@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Model\ResourceModel\DocumentTracking;
+namespace Check24Shopping\OrderImport\Model\ResourceModel\DocumentTracking;
 
 use Magento\Framework\ObjectManagerInterface;
 

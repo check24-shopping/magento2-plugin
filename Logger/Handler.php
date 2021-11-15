@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Logger;
+namespace Check24Shopping\OrderImport\Logger;
 
 use Magento\Framework\Logger\Handler\Base;
 use Monolog\Logger;

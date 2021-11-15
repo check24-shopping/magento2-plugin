@@ -1,8 +1,8 @@
 <?php
 
-namespace Check24\OrderImport\Logger;
+namespace Check24Shopping\OrderImport\Logger;
 
-use Check24\OrderImport\Helper\Config\OrderConfig;
+use Check24Shopping\OrderImport\Helper\Config\OrderConfig;
 
 class Logger extends \Monolog\Logger
 {

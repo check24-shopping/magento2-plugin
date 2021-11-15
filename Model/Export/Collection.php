@@ -1,8 +1,8 @@
 <?php
 
-namespace Check24\OrderImport\Model\Export;
+namespace Check24Shopping\OrderImport\Model\Export;
 
-use Check24\OrderImport\Model\Task\ExportProductsTask;
+use Check24Shopping\OrderImport\Model\Task\ExportProductsTask;
 use Magento\Framework\App\Filesystem\DirectoryList;
 use Magento\Framework\Data\Collection as DataCollection;
 use Magento\Framework\Data\Collection\EntityFactoryInterface;

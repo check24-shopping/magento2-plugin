@@ -57,7 +57,7 @@
     </argument>
     <dataSource name="check24_orderimport_listing_data_source">
         <argument name="dataProvider" xsi:type="configurableObject">
-            <argument name="class" xsi:type="string">Check24\OrderImport\Ui\Component\Listing\DataProvider\Order
+            <argument name="class" xsi:type="string">Check24Shopping\OrderImport\Ui\Component\Listing\DataProvider\Order
             </argument>
             <argument name="name" xsi:type="string">check24_orderimport_listing_data_source</argument>
             <argument name="primaryFieldName" xsi:type="string">id</argument>
@@ -181,7 +181,7 @@
                 </item>
             </argument>
         </column>
-        <column name="check24_order_id" class="Check24\OrderImport\Ui\Component\Listing\Column\Order\Check24OrderId">
+        <column name="check24_order_id" class="Check24Shopping\OrderImport\Ui\Component\Listing\Column\Order\Check24OrderId">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="bodyTmpl" xsi:type="string">ui/grid/cells/html</item>
@@ -192,7 +192,7 @@
         <column name="status">
             <argument name="data" xsi:type="array">
                 <item name="options" xsi:type="object">
-                    Check24\OrderImport\Ui\Component\Listing\Column\Order\Status\Options
+                    Check24Shopping\OrderImport\Ui\Component\Listing\Column\Order\Status\Options
                 </item>
                 <item name="config" xsi:type="array">
                     <item name="filter" xsi:type="string">select</item>
@@ -204,7 +204,7 @@
             </argument>
         </column>
         <column name="magento_order_increment_id"
-                class="Check24\OrderImport\Ui\Component\Listing\Column\Order\MagentoOrderIncrementId">
+                class="Check24Shopping\OrderImport\Ui\Component\Listing\Column\Order\MagentoOrderIncrementId">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="bodyTmpl" xsi:type="string">ui/grid/cells/html</item>
@@ -212,7 +212,7 @@
                 </item>
             </argument>
         </column>
-        <column name="error" class="Check24\OrderImport\Ui\Component\Listing\Column\Order\Error">
+        <column name="error" class="Check24Shopping\OrderImport\Ui\Component\Listing\Column\Order\Error">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="filter" xsi:type="string">text</item>
@@ -239,7 +239,7 @@
                 </item>
             </argument>
         </column>
-        <column name="action" class="Check24\OrderImport\Ui\Component\Listing\Column\Order\PageActions">
+        <column name="action" class="Check24Shopping\OrderImport\Ui\Component\Listing\Column\Order\PageActions">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="bodyTmpl" xsi:type="string">ui/grid/cells/html</item>

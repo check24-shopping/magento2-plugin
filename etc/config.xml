@@ -4,7 +4,7 @@
         <payment>
             <check24>
                 <payment_action>capture</payment_action>
-                <model>Check24\OrderImport\Model\Payment\Check24</model>
+                <model>Check24Shopping\OrderImport\Model\Payment\Check24</model>
                 <active>1</active>
                 <title>Check24</title>
                 <order_status>processing</order_status>

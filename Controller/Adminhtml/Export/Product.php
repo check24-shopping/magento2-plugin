@@ -1,8 +1,8 @@
 <?php
 
-namespace Check24\OrderImport\Controller\Adminhtml\Export;
+namespace Check24Shopping\OrderImport\Controller\Adminhtml\Export;
 
-use Check24\OrderImport\Model\Task\ExportProductsTask;
+use Check24Shopping\OrderImport\Model\Task\ExportProductsTask;
 use Exception;
 use Magento\Backend\App\Action;
 

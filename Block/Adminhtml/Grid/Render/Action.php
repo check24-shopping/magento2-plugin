@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Block\Adminhtml\Grid\Render;
+namespace Check24Shopping\OrderImport\Block\Adminhtml\Grid\Render;
 
 use Magento\Backend\Block\Widget\Grid\Column\Renderer\AbstractRenderer;
 use Magento\Framework\DataObject;

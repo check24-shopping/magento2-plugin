@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Check24\OrderImport\Setup;
+namespace Check24Shopping\OrderImport\Setup;
 
 
-use Check24\OrderImport\Api\Data\OrderImportInterface;
+use Check24Shopping\OrderImport\Api\Data\OrderImportInterface;
 use Magento\Framework\DB\Adapter\AdapterInterface;
 use Magento\Framework\DB\Ddl\Table;
 use Magento\Framework\Setup\SchemaSetupInterface;

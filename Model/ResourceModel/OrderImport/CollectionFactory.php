@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Model\ResourceModel\OrderImport;
+namespace Check24Shopping\OrderImport\Model\ResourceModel\OrderImport;
 
 use Magento\Framework\ObjectManagerInterface;
 

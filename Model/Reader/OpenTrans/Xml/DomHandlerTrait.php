@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Model\Reader\OpenTrans\Xml;
+namespace Check24Shopping\OrderImport\Model\Reader\OpenTrans\Xml;
 
 use DOMElement;
 

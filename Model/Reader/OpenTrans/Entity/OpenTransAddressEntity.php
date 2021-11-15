@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Check24\OrderImport\Model\Reader\OpenTrans\Entity;
+namespace Check24Shopping\OrderImport\Model\Reader\OpenTrans\Entity;
 
 
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDataAddressInterface;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDataAddressInterface;
 
 final class OpenTransAddressEntity implements OpenTransDataAddressInterface
 {

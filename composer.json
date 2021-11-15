@@ -1,5 +1,5 @@
 {
-    "name": "check24/order-import",
+    "name": "check24-shopping/order-import",
     "description": "Import orders from check24",
     "type": "magento2-module",
     "version": "1.0.0",
@@ -22,7 +22,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "Check24\\OrderImport\\": ""
+            "Check24Shopping\\OrderImport\\": ""
         }
     }
 }

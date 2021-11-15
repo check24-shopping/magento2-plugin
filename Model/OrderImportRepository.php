@@ -1,13 +1,13 @@
 <?php
 
-namespace Check24\OrderImport\Model;
+namespace Check24Shopping\OrderImport\Model;
 
-use Check24\OrderImport\Api\Data\OrderImportInterface;
-use Check24\OrderImport\Api\Data\OrderImportInterfaceFactory;
-use Check24\OrderImport\Api\Data\OrderImportSearchResultsInterface;
-use Check24\OrderImport\Api\Data\OrderImportSearchResultsInterfaceFactory;
-use Check24\OrderImport\Api\OrderImportRepositoryInterface;
-use Check24\OrderImport\Model\ResourceModel\OrderImport\CollectionFactory as OrderCollectionFactory;
+use Check24Shopping\OrderImport\Api\Data\OrderImportInterface;
+use Check24Shopping\OrderImport\Api\Data\OrderImportInterfaceFactory;
+use Check24Shopping\OrderImport\Api\Data\OrderImportSearchResultsInterface;
+use Check24Shopping\OrderImport\Api\Data\OrderImportSearchResultsInterfaceFactory;
+use Check24Shopping\OrderImport\Api\OrderImportRepositoryInterface;
+use Check24Shopping\OrderImport\Model\ResourceModel\OrderImport\CollectionFactory as OrderCollectionFactory;
 use Magento\Framework\Api\SearchCriteriaBuilder;
 use Magento\Framework\Api\SearchCriteriaInterface;
 use Magento\Framework\Stdlib\DateTime\DateTimeFactory;

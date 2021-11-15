@@ -1,14 +1,14 @@
 <?php
 
-namespace Check24\OrderImport\Service\Mapping;
+namespace Check24Shopping\OrderImport\Service\Mapping;
 
-use Check24\OrderImport\Api\Data\OrderMappingInterfaceFactory;
-use Check24\OrderImport\Api\Data\OrderPositionMappingInterfaceFactory;
-use Check24\OrderImport\Model\OrderMappingRepository;
-use Check24\OrderImport\Model\OrderPositionMappingRepository;
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDataOrderInterface;
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDataOrderItemInterface;
-use Check24\OrderImport\Model\Reader\OpenTrans\Xml\OpenTransOrderDocument;
+use Check24Shopping\OrderImport\Api\Data\OrderMappingInterfaceFactory;
+use Check24Shopping\OrderImport\Api\Data\OrderPositionMappingInterfaceFactory;
+use Check24Shopping\OrderImport\Model\OrderMappingRepository;
+use Check24Shopping\OrderImport\Model\OrderPositionMappingRepository;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDataOrderInterface;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDataOrderItemInterface;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\Xml\OpenTransOrderDocument;
 use Exception;
 use Magento\Sales\Api\Data\OrderInterface;
 use Magento\Sales\Api\Data\OrderItemInterface;

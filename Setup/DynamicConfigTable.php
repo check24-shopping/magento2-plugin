@@ -1,8 +1,8 @@
 <?php
 
-namespace Check24\OrderImport\Setup;
+namespace Check24Shopping\OrderImport\Setup;
 
-use Check24\OrderImport\Api\Data\DynamicConfigInterface;
+use Check24Shopping\OrderImport\Api\Data\DynamicConfigInterface;
 use Magento\Framework\DB\Ddl\Table;
 use Magento\Framework\Setup\SchemaSetupInterface;
 

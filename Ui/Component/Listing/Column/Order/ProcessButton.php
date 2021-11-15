@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Ui\Component\Listing\Column\Order;
+namespace Check24Shopping\OrderImport\Ui\Component\Listing\Column\Order;
 
 use Magento\Backend\Block\Widget\Context;
 use Magento\Customer\Block\Adminhtml\Edit\GenericButton;

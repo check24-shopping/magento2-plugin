@@ -1,9 +1,9 @@
 <?php
 
-namespace Check24\OrderImport\Test\Unit;
+namespace Check24Shopping\OrderImport\Test\Unit;
 
-use Check24\OrderImport\Model\Reader\OpenTrans\Xml\OpenTransDocument;
-use Check24\OrderImport\Test\Asset\UnitTestAssetTrait;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\Xml\OpenTransDocument;
+use Check24Shopping\OrderImport\Test\Asset\UnitTestAssetTrait;
 use PHPUnit\Framework\TestCase;
 
 class OpenTransDocumentTest extends TestCase

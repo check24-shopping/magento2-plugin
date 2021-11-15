@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Model\ValueObject\Interfaces;
+namespace Check24Shopping\OrderImport\Model\ValueObject\Interfaces;
 
 interface ErrorMessageInterface
 {

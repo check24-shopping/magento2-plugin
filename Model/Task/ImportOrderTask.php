@@ -1,20 +1,20 @@
 <?php
 
-namespace Check24\OrderImport\Model\Task;
+namespace Check24Shopping\OrderImport\Model\Task;
 
-use Check24\OrderImport\Api\Data\DocumentTrackingInterfaceFactory;
-use Check24\OrderImport\Api\DocumentTrackingRepositoryInterface;
-use Check24\OrderImport\Helper\Config\ApiConfiguration;
-use Check24\OrderImport\Model\Exception\CanNotParseXml;
-use Check24\OrderImport\Model\Exception\Check24OrderNotPersisted;
-use Check24\OrderImport\Model\Exception\NoValidConfiguration;
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDocumentInterface;
-use Check24\OrderImport\Model\Task\Model\ImportOrderResult;
-use Check24\OrderImport\Service\Api\ApiConfigurationService;
-use Check24\OrderImport\Service\Api\DocumentRequestService;
-use Check24\OrderImport\Service\Api\OrderAcknowledgeService;
-use Check24\OrderImport\Service\Api\SubmitErrorService;
-use Check24\OrderImport\Service\Document\DocumentImportService;
+use Check24Shopping\OrderImport\Api\Data\DocumentTrackingInterfaceFactory;
+use Check24Shopping\OrderImport\Api\DocumentTrackingRepositoryInterface;
+use Check24Shopping\OrderImport\Helper\Config\ApiConfiguration;
+use Check24Shopping\OrderImport\Model\Exception\CanNotParseXml;
+use Check24Shopping\OrderImport\Model\Exception\Check24OrderNotPersisted;
+use Check24Shopping\OrderImport\Model\Exception\NoValidConfiguration;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDocumentInterface;
+use Check24Shopping\OrderImport\Model\Task\Model\ImportOrderResult;
+use Check24Shopping\OrderImport\Service\Api\ApiConfigurationService;
+use Check24Shopping\OrderImport\Service\Api\DocumentRequestService;
+use Check24Shopping\OrderImport\Service\Api\OrderAcknowledgeService;
+use Check24Shopping\OrderImport\Service\Api\SubmitErrorService;
+use Check24Shopping\OrderImport\Service\Document\DocumentImportService;
 use Exception;
 use Psr\Log\LoggerInterface;
 

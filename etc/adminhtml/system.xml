@@ -45,19 +45,19 @@
                        showInWebsite="1" showInStore="1">
                     <label>Shipping Carrier</label>
                     <comment>Please activate and configure a shipping method for the order import to work.</comment>
-                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\ShippingCarriers</source_model>
+                    <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\ShippingCarriers</source_model>
                 </field>
 
                 <field id="schedule" translate="label,comment" type="select" sortOrder="30" showInDefault="1"
                        showInWebsite="1" showInStore="1">
                     <label>Cron Schedule</label>
-                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Cron</source_model>
+                    <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Cron</source_model>
                 </field>
 
                 <field id="attribute_id" translate="label" type="select" sortOrder="40" showInDefault="1"
                        showInWebsite="1" showInStore="1">
                     <label><![CDATA[Import Product ID]]></label>
-                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\ProductId</source_model>
+                    <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\ProductId</source_model>
                 </field>
 
                 <field id="debug" translate="label" type="select" sortOrder="50" showInDefault="1" showInWebsite="1"
@@ -85,7 +85,7 @@
                 <field id="schedule" translate="label,comment" type="select" sortOrder="20" showInDefault="1"
                        showInWebsite="1" showInStore="1">
                     <label>Cron Schedule</label>
-                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Cron</source_model>
+                    <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Cron</source_model>
                 </field>
             </group>
             <group id="productexport_filters" translate="label" type="text" sortOrder="4" showInDefault="1"
@@ -106,7 +106,7 @@
                 <field id="included_attribute_sets" translate="label" type="multiselect" sortOrder="30"
                        showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Included Attribute Sets</label>
-                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Attributesets</source_model>
+                    <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Attributesets</source_model>
                 </field>
 
                 <field id="instock" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1"
@@ -123,26 +123,26 @@
                 <field id="attribute_id" translate="label" type="select" sortOrder="10" showInDefault="1"
                        showInWebsite="1" showInStore="1">
                     <label><![CDATA[Export Product ID]]></label>
-                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Productid</source_model>
+                    <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Productid</source_model>
                 </field>
 
                 <field id="attribute_description" translate="label" type="select" sortOrder="20" showInDefault="1"
                        showInWebsite="1" showInStore="1">
                     <label><![CDATA[Product Description]]></label>
-                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Productdescription</source_model>
+                    <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Productdescription</source_model>
                 </field>
 
                 <field id="attribute_name" translate="label" type="select" sortOrder="30" showInDefault="1"
                        showInWebsite="1" showInStore="1">
                     <label><![CDATA[Attribute for <b>Product Name</b> <i style="color:red">(required)</i>]]></label>
-                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
+                    <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
                     <validate>required-entry</validate>
                 </field>
 
                 <field id="attribute_manufacturer" translate="label,comment" type="text" sortOrder="40"
                        showInDefault="1" showInWebsite="1" showInStore="1">
                     <label><![CDATA[<b>Manufacturer</b>]]></label>
-                    <frontend_model>Check24\OrderImport\Block\Adminhtml\System\Config\Manufacturer</frontend_model>
+                    <frontend_model>Check24Shopping\OrderImport\Block\Adminhtml\System\Config\Manufacturer</frontend_model>
                     <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
                     <comment>Select attribute or define default text. Default text will override the configured
                         attribute.
@@ -152,13 +152,13 @@
                 <field id="attribute_mpnr" translate="label" type="select" sortOrder="50" showInDefault="1"
                        showInWebsite="1" showInStore="1">
                     <label><![CDATA[Attribute for <b>Mpnr</b>]]></label>
-                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
+                    <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
                 </field>
 
                 <field id="attribute_ean" translate="label" type="select" sortOrder="60" showInDefault="1"
                        showInWebsite="1" showInStore="1">
                     <label><![CDATA[Attribute for <b>EAN</b> <i style="color:red">(required)</i>]]></label>
-                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
+                    <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
                     <validate>required-entry</validate>
                 </field>
 
@@ -166,27 +166,27 @@
                        showInWebsite="1" showInStore="1">
                     <label><![CDATA[Attribute for <b>PZN</b>]]></label>
                     <comment>Pharma Central Number</comment>
-                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
+                    <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
                 </field>
 
                 <field id="attribute_price" translate="label,comment" type="select" sortOrder="80" showInDefault="1"
                        showInWebsite="1" showInStore="1">
                     <label><![CDATA[Attribute for <b>Price</b> <i style="color:red">(required)</i>]]></label>
                     <comment><![CDATA[Use price including tax.]]></comment>
-                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
+                    <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
                     <validate>required-entry</validate>
                 </field>
 
                 <field id="attribute_priceperunit" translate="label" type="select" sortOrder="90" showInDefault="1"
                        showInWebsite="1" showInStore="1">
                     <label><![CDATA[Attribute for <b>Price per Unit</b>]]></label>
-                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
+                    <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
                 </field>
 
                 <field id="attribute_deliverytime" translate="label,comment" type="text" sortOrder="100"
                        showInDefault="1" showInWebsite="1" showInStore="1">
                     <label><![CDATA[<b>Delivery Time</b> <i style="color:red">(required)</i>]]></label>
-                    <frontend_model>Check24\OrderImport\Block\Adminhtml\System\Config\Deliverytime</frontend_model>
+                    <frontend_model>Check24Shopping\OrderImport\Block\Adminhtml\System\Config\Deliverytime</frontend_model>
                     <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
                     <comment>Select attribute or define default text. Default text will override the configured
                         attribute.
@@ -196,7 +196,7 @@
                 <field id="attribute_priceshipping" translate="label,comment" type="text" sortOrder="110"
                        showInDefault="1" showInWebsite="1" showInStore="1">
                     <label><![CDATA[<b>Price Shipping</b>]]></label>
-                    <frontend_model>Check24\OrderImport\Block\Adminhtml\System\Config\Priceshipping</frontend_model>
+                    <frontend_model>Check24Shopping\OrderImport\Block\Adminhtml\System\Config\Priceshipping</frontend_model>
                     <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
                     <comment>Select attribute or define default text. Default text will override the configured
                         attribute.

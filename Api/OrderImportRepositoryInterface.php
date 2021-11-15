@@ -1,9 +1,9 @@
 <?php
 
-namespace Check24\OrderImport\Api;
+namespace Check24Shopping\OrderImport\Api;
 
-use Check24\OrderImport\Api\Data\OrderImportInterface;
-use Check24\OrderImport\Api\Data\OrderImportSearchResultsInterface;
+use Check24Shopping\OrderImport\Api\Data\OrderImportInterface;
+use Check24Shopping\OrderImport\Api\Data\OrderImportSearchResultsInterface;
 use Magento\Framework\Api\SearchCriteriaInterface;
 
 interface OrderImportRepositoryInterface

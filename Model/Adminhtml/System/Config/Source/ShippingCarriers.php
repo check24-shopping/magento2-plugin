@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Model\Adminhtml\System\Config\Source;
+namespace Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Shipping\Model\Config;

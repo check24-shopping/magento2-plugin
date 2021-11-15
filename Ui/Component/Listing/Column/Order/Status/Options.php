@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Ui\Component\Listing\Column\Order\Status;
+namespace Check24Shopping\OrderImport\Ui\Component\Listing\Column\Order\Status;
 
 use Magento\Framework\Data\OptionSourceInterface;
 

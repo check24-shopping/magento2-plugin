@@ -1,10 +1,10 @@
 <?php
 
-namespace Check24\OrderImport\Observer;
+namespace Check24Shopping\OrderImport\Observer;
 
-use Check24\OrderImport\Api\Check24ShipmentRepositoryInterface;
-use Check24\OrderImport\Api\Data\Check24ShipmentInterfaceFactory;
-use Check24\OrderImport\Api\DynamicConfigRepositoryInterface;
+use Check24Shopping\OrderImport\Api\Check24ShipmentRepositoryInterface;
+use Check24Shopping\OrderImport\Api\Data\Check24ShipmentInterfaceFactory;
+use Check24Shopping\OrderImport\Api\DynamicConfigRepositoryInterface;
 use Magento\Framework\Event\Observer;
 use Magento\Framework\Event\ObserverInterface;
 use Magento\Sales\Api\Data\ShipmentInterface;

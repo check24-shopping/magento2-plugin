@@ -1,10 +1,10 @@
 <?php
 
-namespace Check24\OrderImport\Model;
+namespace Check24Shopping\OrderImport\Model;
 
-use Check24\OrderImport\Api\OrderManagementInterface;
-use Check24\OrderImport\Helper\Config\OrderConfig;
-use Check24\OrderImport\Helper\ConfigHelper;
+use Check24Shopping\OrderImport\Api\OrderManagementInterface;
+use Check24Shopping\OrderImport\Helper\Config\OrderConfig;
+use Check24Shopping\OrderImport\Helper\ConfigHelper;
 use Magento\Store\Model\StoreManagerInterface;
 
 class OrderManagement implements OrderManagementInterface

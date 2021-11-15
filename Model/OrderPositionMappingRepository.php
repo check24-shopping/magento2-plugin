@@ -1,11 +1,11 @@
 <?php
 
-namespace Check24\OrderImport\Model;
+namespace Check24Shopping\OrderImport\Model;
 
-use Check24\OrderImport\Api\Data\OrderPositionMappingInterface;
-use Check24\OrderImport\Api\Data\OrderPositionMappingInterfaceFactory;
-use Check24\OrderImport\Api\OrderPositionMappingRepositoryInterface;
-use Check24\OrderImport\Model\ResourceModel\OrderPositionMapping\CollectionFactory;
+use Check24Shopping\OrderImport\Api\Data\OrderPositionMappingInterface;
+use Check24Shopping\OrderImport\Api\Data\OrderPositionMappingInterfaceFactory;
+use Check24Shopping\OrderImport\Api\OrderPositionMappingRepositoryInterface;
+use Check24Shopping\OrderImport\Model\ResourceModel\OrderPositionMapping\CollectionFactory;
 use Magento\Framework\Api\SearchCriteriaBuilder;
 use Magento\Framework\Stdlib\DateTime\DateTimeFactory;
 

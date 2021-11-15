@@ -1,11 +1,11 @@
 <?php
 
-namespace Check24\OrderImport\Model;
+namespace Check24Shopping\OrderImport\Model;
 
-use Check24\OrderImport\Api\Data\DocumentTrackingInterface;
-use Check24\OrderImport\Api\Data\DocumentTrackingInterfaceFactory;
-use Check24\OrderImport\Api\DocumentTrackingRepositoryInterface;
-use Check24\OrderImport\Model\ResourceModel\DocumentTracking\CollectionFactory;
+use Check24Shopping\OrderImport\Api\Data\DocumentTrackingInterface;
+use Check24Shopping\OrderImport\Api\Data\DocumentTrackingInterfaceFactory;
+use Check24Shopping\OrderImport\Api\DocumentTrackingRepositoryInterface;
+use Check24Shopping\OrderImport\Model\ResourceModel\DocumentTracking\CollectionFactory;
 use Magento\Framework\Api\SearchCriteriaBuilder;
 
 class DocumentTrackingRepository implements DocumentTrackingRepositoryInterface

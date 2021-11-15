@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Block\Adminhtml\Form\Field;
+namespace Check24Shopping\OrderImport\Block\Adminhtml\Form\Field;
 
 use Magento\Catalog\Model\ResourceModel\Product\Attribute\CollectionFactory;
 use Magento\Config\Model\Config\Source\Enabledisable;

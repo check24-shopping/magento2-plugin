@@ -1,8 +1,8 @@
 <?php
 
-namespace Check24\OrderImport\Ui\Component\Listing\Column\Order;
+namespace Check24Shopping\OrderImport\Ui\Component\Listing\Column\Order;
 
-use Check24\OrderImport\Api\Data\OrderImportInterface;
+use Check24Shopping\OrderImport\Api\Data\OrderImportInterface;
 use Magento\Ui\Component\Listing\Columns\Column;
 
 class Check24OrderId extends Column

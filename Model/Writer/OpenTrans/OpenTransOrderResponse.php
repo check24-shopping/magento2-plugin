@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Model\Writer\OpenTrans;
+namespace Check24Shopping\OrderImport\Model\Writer\OpenTrans;
 
 final class OpenTransOrderResponse extends OpenTransResponse
 {

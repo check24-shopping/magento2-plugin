@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Test\Asset;
+namespace Check24Shopping\OrderImport\Test\Asset;
 
 trait UnitTestAssetTrait
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Check24\OrderImport\Service\Api;
+namespace Check24Shopping\OrderImport\Service\Api;
 
-use Check24\OrderImport\Helper\Config\ApiConfiguration;
-use Check24\OrderImport\Model\ValueObject\Interfaces\ErrorMessageInterface;
+use Check24Shopping\OrderImport\Helper\Config\ApiConfiguration;
+use Check24Shopping\OrderImport\Model\ValueObject\Interfaces\ErrorMessageInterface;
 use Magento\Framework\Webapi\Rest\Request;
 use Throwable;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace Check24\OrderImport\Model\Writer\OpenTrans;
+namespace Check24Shopping\OrderImport\Model\Writer\OpenTrans;
 
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDataDispatchOrderInterface;
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDataOrderInterface;
-use Check24\OrderImport\Service\OpenTrans\OpenTransWriterService;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDataDispatchOrderInterface;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDataOrderInterface;
+use Check24Shopping\OrderImport\Service\OpenTrans\OpenTransWriterService;
 use SimpleXMLElement;
 
 final class OpenTransDispatchNotification implements OpenTransGeneratorInterface

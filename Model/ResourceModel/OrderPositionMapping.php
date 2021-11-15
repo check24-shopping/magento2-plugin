@@ -1,8 +1,8 @@
 <?php
 
-namespace Check24\OrderImport\Model\ResourceModel;
+namespace Check24Shopping\OrderImport\Model\ResourceModel;
 
-use Check24\OrderImport\Api\Data\OrderPositionMappingInterface;
+use Check24Shopping\OrderImport\Api\Data\OrderPositionMappingInterface;
 use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
 use Magento\Framework\Model\ResourceModel\Db\Context;
 

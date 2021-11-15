@@ -1,12 +1,12 @@
 <?php
 
-namespace Check24\OrderImport\Test\Unit;
+namespace Check24Shopping\OrderImport\Test\Unit;
 
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDataAddressInterface;
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDataOrderItemCollection;
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDataPartyInterface;
-use Check24\OrderImport\Model\Reader\OpenTrans\Xml\OpenTransOrderDocument;
-use Check24\OrderImport\Test\Asset\UnitTestAssetTrait;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDataAddressInterface;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDataOrderItemCollection;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDataPartyInterface;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\Xml\OpenTransOrderDocument;
+use Check24Shopping\OrderImport\Test\Asset\UnitTestAssetTrait;
 use PHPUnit\Framework\TestCase;
 
 class OpenTransOrderDocumentTest extends TestCase

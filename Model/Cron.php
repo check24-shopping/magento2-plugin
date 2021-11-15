@@ -1,17 +1,17 @@
 <?php
 
-namespace Check24\OrderImport\Model;
+namespace Check24Shopping\OrderImport\Model;
 
-use Check24\OrderImport\Logger\Logger;
-use Check24\OrderImport\Model\Exception\CustomerMessageInterface;
-use Check24\OrderImport\Model\Task\ExportProductsTask;
-use Check24\OrderImport\Model\Task\ImportOrderTask;
-use Check24\OrderImport\Model\Task\ProcessCancelTask;
-use Check24\OrderImport\Model\Task\ProcessOrderTask;
-use Check24\OrderImport\Model\Task\ProcessReturnTask;
-use Check24\OrderImport\Model\Task\SendCancelResponseTask;
-use Check24\OrderImport\Model\Task\SendDispatchNotificationTask;
-use Check24\OrderImport\Model\Task\SendOrderResponseTask;
+use Check24Shopping\OrderImport\Logger\Logger;
+use Check24Shopping\OrderImport\Model\Exception\CustomerMessageInterface;
+use Check24Shopping\OrderImport\Model\Task\ExportProductsTask;
+use Check24Shopping\OrderImport\Model\Task\ImportOrderTask;
+use Check24Shopping\OrderImport\Model\Task\ProcessCancelTask;
+use Check24Shopping\OrderImport\Model\Task\ProcessOrderTask;
+use Check24Shopping\OrderImport\Model\Task\ProcessReturnTask;
+use Check24Shopping\OrderImport\Model\Task\SendCancelResponseTask;
+use Check24Shopping\OrderImport\Model\Task\SendDispatchNotificationTask;
+use Check24Shopping\OrderImport\Model\Task\SendOrderResponseTask;
 use Magento\Framework\ObjectManagerInterface;
 
 class Cron

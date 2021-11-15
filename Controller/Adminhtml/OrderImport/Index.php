@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Controller\Adminhtml\OrderImport;
+namespace Check24Shopping\OrderImport\Controller\Adminhtml\OrderImport;
 
 use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;

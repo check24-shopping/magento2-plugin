@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24\OrderImport\Model\Reader\OpenTrans;
+namespace Check24Shopping\OrderImport\Model\Reader\OpenTrans;
 
 interface OpenTransDataReturnResponseInterface extends OpenTransDataOrderInterface
 {

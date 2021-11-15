@@ -1,14 +1,14 @@
 <?php
 
-namespace Check24\OrderImport\Service\Document;
+namespace Check24Shopping\OrderImport\Service\Document;
 
-use Check24\OrderImport\Api\Data\DynamicConfigInterface;
-use Check24\OrderImport\Api\Data\OrderImportInterface;
-use Check24\OrderImport\Api\Data\OrderImportInterfaceFactory;
-use Check24\OrderImport\Api\OrderImportRepositoryInterface;
-use Check24\OrderImport\Model\DynamicConfigRepository;
-use Check24\OrderImport\Model\Exception\Check24OrderNotPersisted;
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDocumentInterface;
+use Check24Shopping\OrderImport\Api\Data\DynamicConfigInterface;
+use Check24Shopping\OrderImport\Api\Data\OrderImportInterface;
+use Check24Shopping\OrderImport\Api\Data\OrderImportInterfaceFactory;
+use Check24Shopping\OrderImport\Api\OrderImportRepositoryInterface;
+use Check24Shopping\OrderImport\Model\DynamicConfigRepository;
+use Check24Shopping\OrderImport\Model\Exception\Check24OrderNotPersisted;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDocumentInterface;
 use Psr\Log\LoggerInterface;
 
 class DocumentImportService

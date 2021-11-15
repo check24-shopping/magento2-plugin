@@ -1,8 +1,8 @@
 <?php
 
-namespace Check24\OrderImport\Model\Writer\OpenTrans;
+namespace Check24Shopping\OrderImport\Model\Writer\OpenTrans;
 
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDataOrderInterface;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDataOrderInterface;
 use SimpleXMLElement;
 
 final class OpenTransReturnResponse extends OpenTransResponse

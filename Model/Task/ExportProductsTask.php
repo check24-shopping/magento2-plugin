@@ -1,9 +1,9 @@
 <?php
 
-namespace Check24\OrderImport\Model\Task;
+namespace Check24Shopping\OrderImport\Model\Task;
 
-use Check24\OrderImport\Helper\ExportConfig;
-use Check24\OrderImport\Logger\Logger;
+use Check24Shopping\OrderImport\Helper\ExportConfig;
+use Check24Shopping\OrderImport\Logger\Logger;
 use Exception;
 use Magento\Catalog\Helper\Data as CatalogHelper;
 use Magento\Catalog\Helper\Image;

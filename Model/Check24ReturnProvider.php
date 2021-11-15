@@ -1,10 +1,10 @@
 <?php
 
-namespace Check24\OrderImport\Model;
+namespace Check24Shopping\OrderImport\Model;
 
-use Check24\OrderImport\Api\Check24ReturnProviderInterface;
-use Check24\OrderImport\Api\Check24ReturnRepositoryInterface;
-use Check24\OrderImport\Api\Data\Check24ReturnInterface;
+use Check24Shopping\OrderImport\Api\Check24ReturnProviderInterface;
+use Check24Shopping\OrderImport\Api\Check24ReturnRepositoryInterface;
+use Check24Shopping\OrderImport\Api\Data\Check24ReturnInterface;
 use Magento\Framework\Api\SearchCriteriaBuilder;
 
 class Check24ReturnProvider implements Check24ReturnProviderInterface

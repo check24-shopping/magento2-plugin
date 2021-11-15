@@ -1,8 +1,8 @@
 <?php
 
-namespace Check24\OrderImport\Model\Reader\OpenTrans\Xml;
+namespace Check24Shopping\OrderImport\Model\Reader\OpenTrans\Xml;
 
-use Check24\OrderImport\Model\Reader\OpenTrans\OpenTransDataOrderItemInterface;
+use Check24Shopping\OrderImport\Model\Reader\OpenTrans\OpenTransDataOrderItemInterface;
 use DOMElement;
 
 final class OpenTransOrderItemDocument implements OpenTransDataOrderItemInterface
