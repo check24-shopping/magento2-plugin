@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ORDER xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bmecat="https://www.bme.de/initiativen/bmecat/bmecat-2005"
+       xmlns="http://www.opentrans.org/XMLSchema/2.1"
+       xsi:schemaLocation="http://www.opentrans.org/XMLSchema/2.1 https://merchantcenter.check24.de/sdk/opentrans/schema-definitions/opentrans_2_1.xsd https://www.bme.de/initiativen/bmecat/bmecat-2005 https://merchantcenter.check24.de/sdk/opentrans/schema-definitions/bmecat_2005.xsd"
+       version="2.1" type="standard">
+    <ORDER_HEADER>
+        <CONTROL_INFO>
+            <GENERATOR_INFO>CHECK24</GENERATOR_INFO>
+            <GENERATION_DATE>2021-04-28T11:31:58+02:00</GENERATION_DATE>
+        </CONTROL_INFO>
+        <ORDER_INFO>
+            <ORDER_ID>VC6HKS</ORDER_ID>
+            <ORDER_DATE>2021-04-28T11:29:39+02:00</ORDER_DATE>
+            <PARTIES>
+                <PARTY>
+                    <bmecat:PARTY_ID type="check24">C24-DA-6394110</bmecat:PARTY_ID>
+                    <PARTY_ROLE>delivery</PARTY_ROLE>
+                    <ADDRESS>
+                        <bmecat:NAME>CHECK24 Vergleichsportal Shopping GmbH</bmecat:NAME>
+                        <bmecat:NAME2>Elektronik</bmecat:NAME2>
+                        <bmecat:NAME3>CHECK24 (nur Rechnungsadresse)</bmecat:NAME3>
+                        <bmecat:STREET>Erika-Mann-Str. 66</bmecat:STREET>
+                        <bmecat:ZIP>80636</bmecat:ZIP>
+                        <bmecat:CITY>München</bmecat:CITY>
+                        <bmecat:COUNTRY>Deutschland</bmecat:COUNTRY>
+                        <bmecat:COUNTRY_CODED>DE</bmecat:COUNTRY_CODED>
+                        <bmecat:PHONE>089 - 24 24 11 55</bmecat:PHONE>
+                        <bmecat:EMAIL>c-egdgouhemdihuaakmefogd-adaefkkgke@ch24.de</bmecat:EMAIL>
+                    </ADDRESS>
+                </PARTY>
+                <PARTY>
+                    <bmecat:PARTY_ID type="check24">C24-BA-6394110</bmecat:PARTY_ID>
+                    <PARTY_ROLE>invoice_issuer</PARTY_ROLE>
+                    <ADDRESS>
+                        <bmecat:NAME>CHECK24 Vergleichsportal Shopping GmbH</bmecat:NAME>
+                        <bmecat:NAME2>Elektronik</bmecat:NAME2>
+                        <bmecat:NAME3>CHECK24 (nur Rechnungsadresse)</bmecat:NAME3>
+                        <bmecat:STREET>Erika-Mann-Str. 66</bmecat:STREET>
+                        <bmecat:ZIP>80636</bmecat:ZIP>
+                        <bmecat:CITY>München</bmecat:CITY>
+                        <bmecat:COUNTRY>Deutschland</bmecat:COUNTRY>
+                        <bmecat:COUNTRY_CODED>DE</bmecat:COUNTRY_CODED>
+                        <bmecat:PHONE>089 - 24 24 11 55</bmecat:PHONE>
+                        <bmecat:EMAIL>c-egdgouhemdihuaakmefogd-adaefkkgke@ch24.de</bmecat:EMAIL>
+                    </ADDRESS>
+                </PARTY>
+                <PARTY>
+                    <bmecat:PARTY_ID type="check24">C24-SA-27586</bmecat:PARTY_ID>
+                    <PARTY_ROLE>supplier</PARTY_ROLE>
+                    <ADDRESS>
+                        <bmecat:NAME>Vida XL Europe B.V.</bmecat:NAME>
+                        <bmecat:STREET>Mary Kingsleystraat 1</bmecat:STREET>
+                        <bmecat:ZIP>5928 SK</bmecat:ZIP>
+                        <bmecat:CITY>Venlo</bmecat:CITY>
+                    </ADDRESS>
+                </PARTY>
+            </PARTIES>
+            <ORDER_PARTIES_REFERENCE>
+                <bmecat:BUYER_IDREF type="check24">C24-DA-6394110</bmecat:BUYER_IDREF>
+                <bmecat:SUPPLIER_IDREF type="check24">C24-SA-27586</bmecat:SUPPLIER_IDREF>
+            </ORDER_PARTIES_REFERENCE>
+            <bmecat:CURRENCY>EUR</bmecat:CURRENCY>
+            <PAYMENT>
+                <DEBIT>true</DEBIT>
+                <PAYMENT_TERMS>
+                    <PAYMENT_TERM type="unece">25</PAYMENT_TERM>
+                    <TIME_FOR_PAYMENT>
+                        <PAYMENT_DATE>2021-04-28T11:26:49+02:00</PAYMENT_DATE>
+                    </TIME_FOR_PAYMENT>
+                </PAYMENT_TERMS>
+            </PAYMENT>
+            <REMARKS type="deliverymethod">Postversand</REMARKS>
+            <REMARKS type="shippingfee">0.00</REMARKS>
+            <REMARKS type="additionalcosts">0.00</REMARKS>
+            <REMARKS type="versionorderapi">2.0</REMARKS>
+            <REMARKS type="documentnumber">33</REMARKS>
+        </ORDER_INFO>
+    </ORDER_HEADER>
+    <ORDER_ITEM_LIST>
+        <ORDER_ITEM>
+            <LINE_ITEM_ID>3B1jF3414+YPHbym++/WiQ==</LINE_ITEM_ID>
+            <PRODUCT_ID>
+                <bmecat:SUPPLIER_PID>002</bmecat:SUPPLIER_PID>
+                <bmecat:DESCRIPTION_SHORT>vidaXL Palettensofa-Auflagen 7 Stk. Schwarz</bmecat:DESCRIPTION_SHORT>
+            </PRODUCT_ID>
+            <QUANTITY>1</QUANTITY>
+            <bmecat:ORDER_UNIT>C62</bmecat:ORDER_UNIT>
+            <PRODUCT_PRICE_FIX>
+                <bmecat:PRICE_AMOUNT>149.99</bmecat:PRICE_AMOUNT>
+                <TAX_DETAILS_FIX>
+                    <bmecat:TAX_CATEGORY>standard_rate</bmecat:TAX_CATEGORY>
+                    <bmecat:TAX_TYPE>VAT</bmecat:TAX_TYPE>
+                    <bmecat:TAX>0.19</bmecat:TAX>
+                </TAX_DETAILS_FIX>
+            </PRODUCT_PRICE_FIX>
+            <PRICE_LINE_AMOUNT>149.99</PRICE_LINE_AMOUNT>
+        </ORDER_ITEM>
+    </ORDER_ITEM_LIST>
+    <ORDER_SUMMARY>
+        <TOTAL_ITEM_NUM>1</TOTAL_ITEM_NUM>
+        <TOTAL_AMOUNT>149.99</TOTAL_AMOUNT>
+    </ORDER_SUMMARY>
+</ORDER>

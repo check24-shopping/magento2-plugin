@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="check24_orderimportorder">
+        <job name="check24_orderimportorder_cron" instance="Check24\OrderImport\Model\Cron" method="execute">
+            <config_path>check24_orderimport/order/schedule</config_path>
+        </job>
+    </group>
+</config>

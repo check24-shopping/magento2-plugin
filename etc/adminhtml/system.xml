@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="check24_orderimport" translate="label" type="text" sortOrder="10" showInDefault="1"
+                 showInWebsite="1" showInStore="1">
+            <label>CHECK24.</label>
+            <tab>service</tab>
+            <resource>Check24_OrderImport::config_check24</resource>
+
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>General</label>
+
+                <field id="partnerId" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Partner ID</label>
+                </field>
+            </group>
+
+            <group id="access" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>API Access</label>
+                <field id="user" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>User</label>
+                </field>
+
+                <field id="password" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Password</label>
+                </field>
+            </group>
+            <group id="orderImport" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Order Import</label>
+
+                <field id="enabledImport" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <field id="shipping_carrier" translate="label,comment" type="select" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Shipping Carrier</label>
+                    <comment>Please activate and configure a shipping method for the order import to work.</comment>
+                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\ShippingCarriers</source_model>
+                </field>
+
+                <field id="schedule" translate="label,comment" type="select" sortOrder="30" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Cron Schedule</label>
+                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Cron</source_model>
+                </field>
+
+                <field id="attribute_id" translate="label" type="select" sortOrder="40" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label><![CDATA[Import Product ID]]></label>
+                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\ProductId</source_model>
+                </field>
+
+                <field id="debug" translate="label" type="select" sortOrder="50" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Debug</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+
+
+            <group id="productexport" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Product Export</label>
+
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="pub" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Media Files need Pub File Path</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="schedule" translate="label,comment" type="select" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Cron Schedule</label>
+                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Cron</source_model>
+                </field>
+            </group>
+            <group id="productexport_filters" translate="label" type="text" sortOrder="4" showInDefault="1"
+                   showInWebsite="1" showInStore="1">
+                <label>Product Export Filters</label>
+
+                <!--<field id="included_status" translate="label" type="multiselect" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Included Product Status</label>
+                    <source_model>Magento\Catalog\Model\Product\Attribute\Source\Status</source_model>
+                </field>-->
+
+                <field id="included_categories" translate="label" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Included Category IDs</label>
+                    <comment>Comma-separated</comment>
+                </field>
+
+                <field id="included_attribute_sets" translate="label" type="multiselect" sortOrder="30"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Included Attribute Sets</label>
+                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Attributesets</source_model>
+                </field>
+
+                <field id="instock" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Include only products in stock</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+
+            <group id="productexport_attributes" translate="label" type="text" sortOrder="4" showInDefault="1"
+                   showInWebsite="1" showInStore="1">
+                <label>Product Export Attributes</label>
+
+                <field id="attribute_id" translate="label" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label><![CDATA[Export Product ID]]></label>
+                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Productid</source_model>
+                </field>
+
+                <field id="attribute_description" translate="label" type="select" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label><![CDATA[Product Description]]></label>
+                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Productdescription</source_model>
+                </field>
+
+                <field id="attribute_name" translate="label" type="select" sortOrder="30" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label><![CDATA[Attribute for <b>Product Name</b> <i style="color:red">(required)</i>]]></label>
+                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
+                    <validate>required-entry</validate>
+                </field>
+
+                <field id="attribute_manufacturer" translate="label,comment" type="text" sortOrder="40"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label><![CDATA[<b>Manufacturer</b>]]></label>
+                    <frontend_model>Check24\OrderImport\Block\Adminhtml\System\Config\Manufacturer</frontend_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                    <comment>Select attribute or define default text. Default text will override the configured
+                        attribute.
+                    </comment>
+                </field>
+
+                <field id="attribute_mpnr" translate="label" type="select" sortOrder="50" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label><![CDATA[Attribute for <b>Mpnr</b>]]></label>
+                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
+                </field>
+
+                <field id="attribute_ean" translate="label" type="select" sortOrder="60" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label><![CDATA[Attribute for <b>EAN</b> <i style="color:red">(required)</i>]]></label>
+                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
+                    <validate>required-entry</validate>
+                </field>
+
+                <field id="attribute_pzn" translate="label" type="select" sortOrder="70" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label><![CDATA[Attribute for <b>PZN</b>]]></label>
+                    <comment>Pharma Central Number</comment>
+                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
+                </field>
+
+                <field id="attribute_price" translate="label,comment" type="select" sortOrder="80" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label><![CDATA[Attribute for <b>Price</b> <i style="color:red">(required)</i>]]></label>
+                    <comment><![CDATA[Use price including tax.]]></comment>
+                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
+                    <validate>required-entry</validate>
+                </field>
+
+                <field id="attribute_priceperunit" translate="label" type="select" sortOrder="90" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label><![CDATA[Attribute for <b>Price per Unit</b>]]></label>
+                    <source_model>Check24\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
+                </field>
+
+                <field id="attribute_deliverytime" translate="label,comment" type="text" sortOrder="100"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label><![CDATA[<b>Delivery Time</b> <i style="color:red">(required)</i>]]></label>
+                    <frontend_model>Check24\OrderImport\Block\Adminhtml\System\Config\Deliverytime</frontend_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                    <comment>Select attribute or define default text. Default text will override the configured
+                        attribute.
+                    </comment>
+                </field>
+
+                <field id="attribute_priceshipping" translate="label,comment" type="text" sortOrder="110"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label><![CDATA[<b>Price Shipping</b>]]></label>
+                    <frontend_model>Check24\OrderImport\Block\Adminhtml\System\Config\Priceshipping</frontend_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                    <comment>Select attribute or define default text. Default text will override the configured
+                        attribute.
+                    </comment>
+                </field>
+            </group>
+
+        </section>
+    </system>
+</config>

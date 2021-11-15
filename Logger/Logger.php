@@ -1,0 +1,31 @@
+<?php
+
+namespace Check24\OrderImport\Logger;
+
+use Check24\OrderImport\Helper\Config\OrderConfig;
+
+class Logger extends \Monolog\Logger
+{
+    /** @var OrderConfig */
+    private $orderConfig;
+
+    public function __construct(
+        OrderConfig $orderConfig,
+                    $handlers = [],
+                    $processors = []
+    )
+    {
+        parent::__construct('check24orderimport.log', $handlers, $processors);
+
+        $this->orderConfig = $orderConfig;
+    }
+
+    public function addRecord($level, $message, array $context = [])
+    {
+        if ($level < 300 && !$this->orderConfig->isDebugEnabled()) {
+            return false;
+        }
+
+        return parent::addRecord($level, $message, $context);
+    }
+}

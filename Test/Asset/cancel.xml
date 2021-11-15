@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ORDERCHANGE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bmecat="https://www.bme.de/initiativen/bmecat/bmecat-2005"
+             xmlns="http://www.opentrans.org/XMLSchema/2.1"
+             xsi:schemaLocation="http://www.opentrans.org/XMLSchema/2.1 https://merchantcenter.check24.de/sdk/opentrans/schema-definitions/opentrans_2_1.xsd https://www.bme.de/initiativen/bmecat/bmecat-2005 https://merchantcenter.check24.de/sdk/opentrans/schema-definitions/bmecat_2005.xsd"
+             version="2.1">
+    <ORDERCHANGE_HEADER>
+        <CONTROL_INFO>
+            <GENERATOR_INFO>CHECK24</GENERATOR_INFO>
+            <GENERATION_DATE>2021-04-28T11:31:59+02:00</GENERATION_DATE>
+        </CONTROL_INFO>
+        <ORDERCHANGE_INFO>
+            <ORDER_ID>VC6HKS</ORDER_ID>
+            <ORDERCHANGE_DATE>2021-04-28T11:30:08+02:00</ORDERCHANGE_DATE>
+            <ORDER_DATE>2021-04-28T11:29:39+02:00</ORDER_DATE>
+            <ORDERCHANGE_SEQUENCE_ID>2</ORDERCHANGE_SEQUENCE_ID>
+            <PARTIES>
+                <PARTY>
+                    <bmecat:PARTY_ID type="check24">C24-DA-6394110</bmecat:PARTY_ID>
+                    <PARTY_ROLE>delivery</PARTY_ROLE>
+                    <ADDRESS>
+                        <bmecat:NAME2>...</bmecat:NAME2>
+                        <bmecat:NAME3>...</bmecat:NAME3>
+                        <bmecat:STREET>...</bmecat:STREET>
+                        <bmecat:ZIP>...</bmecat:ZIP>
+                        <bmecat:CITY>...</bmecat:CITY>
+                        <bmecat:COUNTRY>Deutschland</bmecat:COUNTRY>
+                        <bmecat:COUNTRY_CODED>DE</bmecat:COUNTRY_CODED>
+                        <bmecat:PHONE>089 - 24 24 11 55</bmecat:PHONE>
+                        <bmecat:EMAIL>c-egdgouhemdihuaakmefogd-adaefkkgke@ch24.de</bmecat:EMAIL>
+                    </ADDRESS>
+                </PARTY>
+                <PARTY>
+                    <bmecat:PARTY_ID type="check24">C24-SA-27586</bmecat:PARTY_ID>
+                    <PARTY_ROLE>invoice_issuer</PARTY_ROLE>
+                    <ADDRESS>
+                        <bmecat:NAME>Vida XL Europe B.V.</bmecat:NAME>
+                        <bmecat:STREET>Mary Kingsleystraat 1</bmecat:STREET>
+                        <bmecat:ZIP>5928 SK</bmecat:ZIP>
+                        <bmecat:CITY>Venlo</bmecat:CITY>
+                    </ADDRESS>
+                </PARTY>
+                <PARTY>
+                    <bmecat:PARTY_ID type="check24">C24-SA-27586</bmecat:PARTY_ID>
+                    <PARTY_ROLE>supplier</PARTY_ROLE>
+                    <ADDRESS>
+                        <bmecat:NAME>Vida XL Europe B.V.</bmecat:NAME>
+                        <bmecat:STREET>Mary Kingsleystraat 1</bmecat:STREET>
+                        <bmecat:ZIP>5928 SK</bmecat:ZIP>
+                        <bmecat:CITY>Venlo</bmecat:CITY>
+                    </ADDRESS>
+                </PARTY>
+            </PARTIES>
+            <ORDER_PARTIES_REFERENCE>
+                <bmecat:BUYER_IDREF type="check24">C24-DA-6394110</bmecat:BUYER_IDREF>
+                <bmecat:SUPPLIER_IDREF type="check24">C24-SA-27586</bmecat:SUPPLIER_IDREF>
+                <SHIPMENT_PARTIES_REFERENCE>
+                    <DELIVERY_IDREF type="check24">C24-DA-6394110</DELIVERY_IDREF>
+                </SHIPMENT_PARTIES_REFERENCE>
+            </ORDER_PARTIES_REFERENCE>
+            <REMARKS type="action">cancellationrequest</REMARKS>
+            <REMARKS type="versionorderapi">2.0</REMARKS>
+            <REMARKS type="documentnumber">34</REMARKS>
+        </ORDERCHANGE_INFO>
+    </ORDERCHANGE_HEADER>
+    <ORDERCHANGE_ITEM_LIST>
+        <ORDER_ITEM>
+            <LINE_ITEM_ID>3B1jF3414+YPHbym++/WiQ==</LINE_ITEM_ID>
+            <PRODUCT_ID>
+                <bmecat:SUPPLIER_PID>002</bmecat:SUPPLIER_PID>
+                <bmecat:DESCRIPTION_SHORT>vidaXL Palettensofa-Auflagen 7 Stk. Schwarz</bmecat:DESCRIPTION_SHORT>
+            </PRODUCT_ID>
+            <QUANTITY>-1</QUANTITY>
+            <bmecat:ORDER_UNIT>C62</bmecat:ORDER_UNIT>
+            <PRICE_LINE_AMOUNT>149.99</PRICE_LINE_AMOUNT>
+            <REMARKS type="reasonkey">order_not_intended</REMARKS>
+            <REMARKS type="reasondescription">Bestellung irrtümlich aufgegeben</REMARKS>
+        </ORDER_ITEM>
+    </ORDERCHANGE_ITEM_LIST>
+    <ORDERCHANGE_SUMMARY>
+        <TOTAL_ITEM_NUM>1</TOTAL_ITEM_NUM>
+    </ORDERCHANGE_SUMMARY>
+</ORDERCHANGE>

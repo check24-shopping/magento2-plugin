@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Check24_OrderImport::check24_orderimport" title="Check24 order" translate="title"
+             module="Check24_OrderImport"
+             sortOrder="50"
+             dependsOnModule="Check24_OrderImport"
+             action="check24_orderimport/orderimport"
+             resource="Check24_OrderImport::check24"
+             parent="Magento_Sales::sales_operation"
+        />
+        <add id="Check24_orderimport::productexport" title="CHECK24 Product Export Neu"
+             module="Check24_OrderImport"
+             sortOrder="100"
+             action="check24_orderimport/export/index"
+             resource="Check24_OrderImport::productexport"
+             parent="Magento_Catalog::catalog"/>
+    </menu>
+</config>

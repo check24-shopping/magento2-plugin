@@ -1,0 +1,28 @@
+{
+    "name": "check24/order-import",
+    "description": "Import orders from check24",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Marco de Leo"
+        }
+    ],
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "require": {
+        "php": "~7.4.0",
+        "magento/magento2-base": "^2.0|^2.1|^2.2|^2.3|^2.4",
+        "ext-dom": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Check24\\OrderImport\\": ""
+        }
+    }
+}
