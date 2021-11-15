@@ -4,11 +4,11 @@
     <body>
         <referenceBlock name="page.title">
             <action method="setPageTitle">
-                <argument name="title" xsi:type="string">Check24</argument>
+                <argument name="title" xsi:type="string">CHECK24</argument>
             </action>
         </referenceBlock>
         <referenceContainer name="content">
-            <uiComponent name="check24_orderimport_listing"/>
+            <uiComponent name="check24shopping_orderimport_listing"/>
         </referenceContainer>
     </body>
 </page>

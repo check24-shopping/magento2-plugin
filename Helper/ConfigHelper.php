@@ -11,13 +11,13 @@ use Magento\Store\Model\StoreManagerInterface;
 class ConfigHelper extends AbstractHelper
 {
     /** @var string config path */
-    const CONFIG_PATH_PARTNER_ID = 'check24_orderimport/general/partnerId';
+    const CONFIG_PATH_PARTNER_ID = 'check24shopping_orderimport/general/partnerId';
     /** @var string */
     const API_HOST = 'https://opentrans.shopping.check24.de';
     /** @var string config path */
-    const CONFIG_PATH_FTP_USER = 'check24_orderimport/access/user';
+    const CONFIG_PATH_FTP_USER = 'check24shopping_orderimport/access/user';
     /** @var string config path */
-    const CONFIG_PATH_FTP_PASSWORD = 'check24_orderimport/access/password';
+    const CONFIG_PATH_FTP_PASSWORD = 'check24shopping_orderimport/access/password';
     /** @var string */
     const API_PORT = '443';
 

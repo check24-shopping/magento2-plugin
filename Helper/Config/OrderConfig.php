@@ -10,11 +10,11 @@ use Magento\Store\Model\StoreManagerInterface;
 
 class OrderConfig extends AbstractHelper
 {
-    const XML_PATH_SHIPPING_CARRIER = 'check24_orderimport/orderImport/shipping_carrier';
-    const XML_PATH_CRON_SCHEDULE = 'check24_orderimport/orderImport/schedule';
-    const XML_PATH_ENABLED = 'check24_orderimport/orderImport/enabledImport';
-    const XML_PATH_DEBUG = 'check24_orderimport/orderImport/debug';
-    const XML_PATH_IMPORT_ATTRIBUTE_ID = 'check24_orderimport/orderImport/attribute_id';
+    const XML_PATH_SHIPPING_CARRIER = 'check24shopping_orderimport/orderImport/shipping_carrier';
+    const XML_PATH_CRON_SCHEDULE = 'check24shopping_orderimport/orderImport/schedule';
+    const XML_PATH_ENABLED = 'check24shopping_orderimport/orderImport/enabledImport';
+    const XML_PATH_DEBUG = 'check24shopping_orderimport/orderImport/debug';
+    const XML_PATH_IMPORT_ATTRIBUTE_ID = 'check24shopping_orderimport/orderImport/attribute_id';
 
     /** @var string scope to use */
     protected $scopeLevel;

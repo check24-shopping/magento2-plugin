@@ -6,7 +6,7 @@ interface OrderImportInterface
 {
     const TABLE_NAME = 'check24_document_import';
     const FIELD_ID = 'id';
-    const FIELD_CHECK24_ORDER_ID = 'check24_order_id';
+    const FIELD_CHECK24_ORDER_ID = 'check24shopping_order_id';
     const FIELD_CONTENT = 'content';
     const FIELD_MAGENTO_ORDER_ID = 'magento_order_id';
     const FIELD_MAGENTO_ORDER_INCREMENT_ID = 'magento_order_increment_id';

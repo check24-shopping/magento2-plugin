@@ -4,12 +4,12 @@
     <argument name="data" xsi:type="array">
         <item name="js_config" xsi:type="array">
             <item name="provider" xsi:type="string">
-                check24_orderimport_listing.check24_orderimport_listing_data_source
+                check24shopping_orderimport_listing.check24shopping_orderimport_listing_data_source
             </item>
-            <item name="deps" xsi:type="string">check24_orderimport_listing.check24_orderimport_listing_data_source
+            <item name="deps" xsi:type="string">check24shopping_orderimport_listing.check24shopping_orderimport_listing_data_source
             </item>
         </item>
-        <item name="spinner" xsi:type="string">check24_orderimport_columns</item>
+        <item name="spinner" xsi:type="string">check24shopping_orderimport_columns</item>
         <item name="buttons" xsi:type="array">
             <item name="import" xsi:type="array">
                 <item name="name" xsi:type="string">import</item>
@@ -55,11 +55,11 @@
             </item>
         </item>
     </argument>
-    <dataSource name="check24_orderimport_listing_data_source">
+    <dataSource name="check24shopping_orderimport_listing_data_source">
         <argument name="dataProvider" xsi:type="configurableObject">
             <argument name="class" xsi:type="string">Check24Shopping\OrderImport\Ui\Component\Listing\DataProvider\Order
             </argument>
-            <argument name="name" xsi:type="string">check24_orderimport_listing_data_source</argument>
+            <argument name="name" xsi:type="string">check24shopping_orderimport_listing_data_source</argument>
             <argument name="primaryFieldName" xsi:type="string">id</argument>
             <argument name="requestFieldName" xsi:type="string">id</argument>
             <argument name="data" xsi:type="array">
@@ -89,7 +89,7 @@
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="storageConfig" xsi:type="array">
-                        <item name="namespace" xsi:type="string">check24_orderimport_order_listing</item>
+                        <item name="namespace" xsi:type="string">check24shopping_orderimport_order_listing</item>
                     </item>
                 </item>
             </argument>
@@ -99,7 +99,7 @@
                 <item name="config" xsi:type="array">
                     <item name="columnsData" xsi:type="array">
                         <item name="provider" xsi:type="string">
-                            check24_orderimport_listing.check24_orderimport_listing.check24_orderimport_columns
+                            check24shopping_orderimport_listing.check24shopping_orderimport_listing.check24shopping_orderimport_columns
                         </item>
                     </item>
                     <item name="component" xsi:type="string">Magento_Ui/js/grid/controls/columns</item>
@@ -112,7 +112,7 @@
         <!--<massaction name="listing_massaction">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
-                    <item name="selectProvider" xsi:type="string">check24_orderimport_order_grid.check24_orderimport_order_grid.check24_order_columns.ids</item>
+                    <item name="selectProvider" xsi:type="string">check24shopping_orderimport_order_grid.check24shopping_orderimport_order_grid.check24shopping_order_columns.ids</item>
                     <item name="indexField" xsi:type="string">id</item>
                 </item>
             </argument>
@@ -121,7 +121,7 @@
                     <item name="config" xsi:type="array">
                         <item name="type" xsi:type="string">retry</item>
                         <item name="label" xsi:type="string" translate="true">Retry Processing</item>
-                        <item name="url" xsi:type="url" path="check24_orderimport/order/retry"/>
+                        <item name="url" xsi:type="url" path="check24shopping_orderimport/order/retry"/>
                     </item>
                 </argument>
             </action>
@@ -131,31 +131,31 @@
                 <item name="config" xsi:type="array">
                     <item name="storageConfig" xsi:type="array">
                         <item name="provider" xsi:type="string">
-                            check24_orderimport_listing.check24_orderimport_listing.listing_top.bookmarks
+                            check24shopping_orderimport_listing.check24shopping_orderimport_listing.listing_top.bookmarks
                         </item>
                         <item name="namespace" xsi:type="string">current.paging</item>
                     </item>
                     <item name="selectProvider" xsi:type="string">
-                        check24_orderimport_listing.check24_orderimport_listing.check24_orderimport_columns.ids
+                        check24shopping_orderimport_listing.check24shopping_orderimport_listing.check24shopping_orderimport_columns.ids
                     </item>
                 </item>
             </argument>
         </paging>
     </container>
 
-    <columns name="check24_orderimport_columns">
+    <columns name="check24shopping_orderimport_columns">
         <argument name="data" xsi:type="array">
             <item name="config" xsi:type="array">
                 <item name="storageConfig" xsi:type="array">
                     <item name="provider" xsi:type="string">
-                        check24_orderimport_listing.check24_orderimport_listing.listing_top.bookmarks
+                        check24shopping_orderimport_listing.check24shopping_orderimport_listing.listing_top.bookmarks
                     </item>
                     <item name="namespace" xsi:type="string">current</item>
                 </item>
                 <item name="childDefaults" xsi:type="array">
                     <item name="storageConfig" xsi:type="array">
                         <item name="provider" xsi:type="string">
-                            check24_orderimport_listing.check24_orderimport_listing.listing_top.bookmarks
+                            check24shopping_orderimport_listing.check24shopping_orderimport_listing.listing_top.bookmarks
                         </item>
                         <item name="root" xsi:type="string">columns.${ $.index }</item>
                         <item name="namespace" xsi:type="string">current.${ $.storageConfig.root}</item>
@@ -181,7 +181,7 @@
                 </item>
             </argument>
         </column>
-        <column name="check24_order_id" class="Check24Shopping\OrderImport\Ui\Component\Listing\Column\Order\Check24OrderId">
+        <column name="check24shopping_order_id" class="Check24Shopping\OrderImport\Ui\Component\Listing\Column\Order\Check24OrderId">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="bodyTmpl" xsi:type="string">ui/grid/cells/html</item>

@@ -15,45 +15,45 @@ class ExportConfig extends AbstractHelper
 {
     /* General settings */
     /** @var string config path */
-    const CONFIG_PATH_PRODUCTEXPORT_ENABLED = 'check24_orderimport/productexport/enabled';
+    const CONFIG_PATH_PRODUCTEXPORT_ENABLED = 'check24shopping_orderimport/productexport/enabled';
     /** @var string config path */
-    const CONFIG_PATH_PRODUCTEXPORT_PUB = 'check24_orderimport/productexport/pub';
+    const CONFIG_PATH_PRODUCTEXPORT_PUB = 'check24shopping_orderimport/productexport/pub';
     /** @var string config path */
-    const CONFIG_PATH_PRODUCTEXPORT_CRON = 'check24_orderimport/productexport/schedule';
+    const CONFIG_PATH_PRODUCTEXPORT_CRON = 'check24shopping_orderimport/productexport/schedule';
 
     /* Product export filters */
     /** @var string config path */
-    const CONFIG_PATH_PRODUCTEXPORT_CATEGORIES = 'check24_orderimport/productexport_filters/included_categories';
+    const CONFIG_PATH_PRODUCTEXPORT_CATEGORIES = 'check24shopping_orderimport/productexport_filters/included_categories';
     /** @var string config path */
-    const CONFIG_PATH_PRODUCTEXPORT_ATTRIBUTESETS = 'check24_orderimport/productexport_filters/included_attribute_sets';
+    const CONFIG_PATH_PRODUCTEXPORT_ATTRIBUTESETS = 'check24shopping_orderimport/productexport_filters/included_attribute_sets';
     /** @var string config path */
-    const CONFIG_PATH_PRODUCTEXPORT_INSTOCK = 'check24_orderimport/productexport_filters/instock';
+    const CONFIG_PATH_PRODUCTEXPORT_INSTOCK = 'check24shopping_orderimport/productexport_filters/instock';
 
     /* Product export attribute mapping */
     /** @var string config path */
-    const CONFIG_PATH_PRODUCTID = 'check24_orderimport/productexport_attributes/attribute_id';
+    const CONFIG_PATH_PRODUCTID = 'check24shopping_orderimport/productexport_attributes/attribute_id';
     /** @var string config path */
-    const CONFIG_PATH_PRODUCTEXPORT_DESCRIPTION = 'check24_orderimport/productexport_attributes/attribute_description';
+    const CONFIG_PATH_PRODUCTEXPORT_DESCRIPTION = 'check24shopping_orderimport/productexport_attributes/attribute_description';
     /** @var string config path */
-    const CONFIG_PATH_PRODUCTEXPORT_NAME = 'check24_orderimport/productexport_attributes/attribute_name';
+    const CONFIG_PATH_PRODUCTEXPORT_NAME = 'check24shopping_orderimport/productexport_attributes/attribute_name';
     /** @var string config path */
-    const CONFIG_PATH_PRODUCTEXPORT_MANUFACTURER = 'check24_orderimport/productexport_attributes/attribute_manufacturer';
+    const CONFIG_PATH_PRODUCTEXPORT_MANUFACTURER = 'check24shopping_orderimport/productexport_attributes/attribute_manufacturer';
     /** @var string config path */
-    const CONFIG_PATH_PRODUCTEXPORT_MPNR = 'check24_orderimport/productexport_attributes/attribute_mpnr';
+    const CONFIG_PATH_PRODUCTEXPORT_MPNR = 'check24shopping_orderimport/productexport_attributes/attribute_mpnr';
     /** @var string config path */
-    const CONFIG_PATH_PRODUCTEXPORT_EAN = 'check24_orderimport/productexport_attributes/attribute_ean';
+    const CONFIG_PATH_PRODUCTEXPORT_EAN = 'check24shopping_orderimport/productexport_attributes/attribute_ean';
     /** @var string config path */
-    const CONFIG_PATH_PRODUCTEXPORT_PZN = 'check24_orderimport/productexport_attributes/attribute_pzn';
+    const CONFIG_PATH_PRODUCTEXPORT_PZN = 'check24shopping_orderimport/productexport_attributes/attribute_pzn';
     /** @var string config path */
-    const CONFIG_PATH_PRODUCTEXPORT_PRICE = 'check24_orderimport/productexport_attributes/attribute_price';
+    const CONFIG_PATH_PRODUCTEXPORT_PRICE = 'check24shopping_orderimport/productexport_attributes/attribute_price';
     /** @var string config path */
-    const CONFIG_PATH_PRODUCTEXPORT_PRICEPERUNIT = 'check24_orderimport/productexport_attributes/attribute_priceperunit';
+    const CONFIG_PATH_PRODUCTEXPORT_PRICEPERUNIT = 'check24shopping_orderimport/productexport_attributes/attribute_priceperunit';
     /** @var string config path */
-    const CONFIG_PATH_PRODUCTEXPORT_DELIVERYTIME = 'check24_orderimport/productexport_attributes/attribute_deliverytime';
+    const CONFIG_PATH_PRODUCTEXPORT_DELIVERYTIME = 'check24shopping_orderimport/productexport_attributes/attribute_deliverytime';
     /** @var string config path */
-    const CONFIG_PATH_PRODUCTEXPORT_PRICESHIPPING = 'check24_orderimport/productexport_attributes/attribute_priceshipping';
+    const CONFIG_PATH_PRODUCTEXPORT_PRICESHIPPING = 'check24shopping_orderimport/productexport_attributes/attribute_priceshipping';
     /** @var string config path */
-    const CONFIG_PATH_PRODUCTEXPORT_WEIGHT = 'check24_orderimport/productexport_attributes/attribute_weight';
+    const CONFIG_PATH_PRODUCTEXPORT_WEIGHT = 'check24shopping_orderimport/productexport_attributes/attribute_weight';
     /** @var string scope to use */
     protected $scopeLevel;
     /** @var  null|array */

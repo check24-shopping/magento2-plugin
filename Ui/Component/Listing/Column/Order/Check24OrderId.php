@@ -11,7 +11,7 @@ class Check24OrderId extends Column
     {
         if (isset($dataSource['data']['items'])) {
             foreach ($dataSource['data']['items'] as &$item) {
-                $item[OrderImportInterface::FIELD_CHECK24_ORDER_ID] = sprintf('<a href="%s" target="_blank">%s</a>', $this->getContext()->getUrl('check24_orderimport/orderimport/view', ['id' => $item['id']]), $item['check24_order_id']);
+                $item[OrderImportInterface::FIELD_CHECK24_ORDER_ID] = sprintf('<a href="%s" target="_blank">%s</a>', $this->getContext()->getUrl('check24shopping_orderimport/orderimport/view', ['id' => $item['id']]), $item['check24shopping_order_id']);
             }
         }
 

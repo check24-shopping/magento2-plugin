@@ -44,6 +44,6 @@ class ProcessButton extends GenericButton implements ButtonProviderInterface
      */
     public function getProcessUrl()
     {
-        return $this->getUrl('check24_orderimport/orderimport/process');
+        return $this->getUrl('check24shopping_orderimport/orderimport/process');
     }
 }

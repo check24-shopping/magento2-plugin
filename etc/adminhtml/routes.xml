@@ -2,8 +2,8 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="admin">
-        <route id="check24_orderimport" frontName="check24_orderimport">
-            <module name="Check24_OrderImport"/>
+        <route id="check24shopping_orderimport" frontName="check24shopping_orderimport">
+            <module name="Check24Shopping_OrderImport"/>
         </route>
     </router>
 </config>

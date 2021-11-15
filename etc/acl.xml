@@ -7,7 +7,7 @@
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config" title="Configuration" sortOrder="30">
-                            <resource id="Check24_OrderImport::config_check24" title="Check24 Section" sortOrder="100"/>
+                            <resource id="Check24Shopping_OrderImport::config_check24" title="Check24 Section" sortOrder="100"/>
                         </resource>
                     </resource>
                 </resource>

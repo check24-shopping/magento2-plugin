@@ -38,6 +38,6 @@ class Product extends Action
      */
     protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('Check24_OrderImport::productexport');
+        return $this->_authorization->isAllowed('Check24Shopping_OrderImport::productexport');
     }
 }

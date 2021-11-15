@@ -8,8 +8,8 @@ use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 
 class Collection extends AbstractCollection
 {
-    protected $_eventPrefix = 'check24_orders';
-    protected $_eventObject = 'check24_orders';
+    protected $_eventPrefix = 'check24shopping_orders';
+    protected $_eventObject = 'check24shopping_orders';
 
     protected function _construct()
     {

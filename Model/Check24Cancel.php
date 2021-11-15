@@ -8,7 +8,7 @@ use Magento\Framework\Model\AbstractModel;
 
 class Check24Cancel extends AbstractModel implements Check24CancelInterface
 {
-    private const MODEL_NAME = 'check24_orderimport_cancel';
+    private const MODEL_NAME = 'check24shopping_orderimport_cancel';
 
     /** @var string */
     const CACHE_TAG = self::MODEL_NAME;

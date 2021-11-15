@@ -8,7 +8,7 @@ use Magento\Framework\Model\AbstractModel;
 
 class Check24Return extends AbstractModel implements Check24ReturnInterface
 {
-    private const MODEL_NAME = 'check24_orderimport_return';
+    private const MODEL_NAME = 'check24shopping_orderimport_return';
 
     /** @var string */
     const CACHE_TAG = self::MODEL_NAME;
