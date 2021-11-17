@@ -4,7 +4,12 @@
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
     <group id="check24shopping_orderimportorder">
         <job name="check24shopping_orderimportorder_cron" instance="Check24Shopping\OrderImport\Model\Cron" method="execute">
-            <config_path>check24shopping_orderimport/order/schedule</config_path>
+            <config_path>check24shopping_orderimport/orderImport/schedule</config_path>
+        </job>
+    </group>
+    <group id="check24shopping_productexport">
+        <job name="check24shopping_productexport_cron" instance="Check24Shopping\OrderImport\Model\ExportCron" method="execute">
+            <config_path>check24shopping_orderimport/productexport/schedule</config_path>
         </job>
     </group>
 </config>
