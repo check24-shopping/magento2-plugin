@@ -4,7 +4,6 @@ namespace Check24Shopping\OrderImport\Model;
 
 use Check24Shopping\OrderImport\Logger\Logger;
 use Check24Shopping\OrderImport\Model\Exception\CustomerMessageInterface;
-use Check24Shopping\OrderImport\Model\Task\ExportProductsTask;
 use Check24Shopping\OrderImport\Model\Task\ImportOrderTask;
 use Check24Shopping\OrderImport\Model\Task\ProcessCancelTask;
 use Check24Shopping\OrderImport\Model\Task\ProcessOrderTask;
@@ -60,11 +59,6 @@ class Cron
         }
         try {
             $this->objectManager->get(SendCancelResponseTask::class)->submit();
-        } catch (CustomerMessageInterface $exception) {
-            $this->logger->error($exception->getCustomerMessage());
-        }
-        try {
-            $this->objectManager->get(ExportProductsTask::class)->exportProducts();
         } catch (CustomerMessageInterface $exception) {
             $this->logger->error($exception->getCustomerMessage());
         }

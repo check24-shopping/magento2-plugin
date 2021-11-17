@@ -51,7 +51,7 @@
                 <field id="schedule" translate="label,comment" type="select" sortOrder="30" showInDefault="1"
                        showInWebsite="1" showInStore="1">
                     <label>Cron Schedule</label>
-                    <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Cron</source_model>
+                    <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\ImportCron</source_model>
                 </field>
 
                 <field id="attribute_id" translate="label" type="select" sortOrder="40" showInDefault="1"
@@ -85,7 +85,7 @@
                 <field id="schedule" translate="label,comment" type="select" sortOrder="20" showInDefault="1"
                        showInWebsite="1" showInStore="1">
                     <label>Cron Schedule</label>
-                    <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Cron</source_model>
+                    <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\ExportCron</source_model>
                 </field>
             </group>
             <group id="productexport_filters" translate="label" type="text" sortOrder="4" showInDefault="1"

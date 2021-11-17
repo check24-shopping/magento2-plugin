@@ -102,7 +102,7 @@ class ExportConfig extends AbstractHelper
      */
     public function getCronSchedule($storeId = null)
     {
-        return $this->scopeConfig->getValue(self::XML_PATH_CRON_SCHEDULE, $this->scopeLevel, $storeId);
+        return $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_CRON, $this->scopeLevel, $storeId);
     }
 
     /**
