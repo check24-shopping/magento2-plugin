@@ -67,10 +67,10 @@ class DocumentRequestService
         }
         $fieldMapping = [
             'x-confirmshipment' => 'SendDispatch',
-            'x-receivecancellation' => 'SendCancel',
-            'x-sendcancellation' => 'ProcessCancel',
-            'x-receivereturn' => 'SendReturn',
-            'x-sendreturn' => 'ProcessReturn',
+            'x-receivecancellation' => 'ProcessCancel',
+            'x-sendcancellation' => 'SendCancel',
+            'x-receivereturn' => 'ProcessReturn',
+            'x-sendreturn' => 'SendReturn',
         ];
         $dynamicConfig = $this->dynamicConfigRepository->load();
         $isChanged = false;
