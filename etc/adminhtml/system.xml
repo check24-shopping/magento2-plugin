@@ -4,7 +4,7 @@
     <system>
         <section id="check24shopping_orderimport" translate="label" type="text" sortOrder="10" showInDefault="1"
                  showInWebsite="1" showInStore="1">
-            <label>CHECK24.</label>
+            <label>CHECK24</label>
             <tab>service</tab>
             <resource>Check24Shopping_OrderImport::config_check24</resource>
 
@@ -134,7 +134,7 @@
 
                 <field id="attribute_name" translate="label" type="select" sortOrder="30" showInDefault="1"
                        showInWebsite="1" showInStore="1">
-                    <label><![CDATA[Attribute for <b>Product Name</b> <i style="color:red">(required)</i>]]></label>
+                    <label><![CDATA[<b>Product Name</b> <i style="color:red">(required)</i>]]></label>
                     <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
                     <validate>required-entry</validate>
                 </field>
@@ -151,27 +151,27 @@
 
                 <field id="attribute_mpnr" translate="label" type="select" sortOrder="50" showInDefault="1"
                        showInWebsite="1" showInStore="1">
-                    <label><![CDATA[Attribute for <b>Mpnr</b>]]></label>
+                    <label><![CDATA[<b>Mpnr</b>]]></label>
                     <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
                 </field>
 
                 <field id="attribute_ean" translate="label" type="select" sortOrder="60" showInDefault="1"
                        showInWebsite="1" showInStore="1">
-                    <label><![CDATA[Attribute for <b>EAN</b> <i style="color:red">(required)</i>]]></label>
+                    <label><![CDATA[<b>EAN</b> <i style="color:red">(required)</i>]]></label>
                     <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
                     <validate>required-entry</validate>
                 </field>
 
                 <field id="attribute_pzn" translate="label" type="select" sortOrder="70" showInDefault="1"
                        showInWebsite="1" showInStore="1">
-                    <label><![CDATA[Attribute for <b>PZN</b>]]></label>
+                    <label><![CDATA[<b>PZN</b>]]></label>
                     <comment>Pharma Central Number</comment>
                     <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
                 </field>
 
                 <field id="attribute_price" translate="label,comment" type="select" sortOrder="80" showInDefault="1"
                        showInWebsite="1" showInStore="1">
-                    <label><![CDATA[Attribute for <b>Price</b> <i style="color:red">(required)</i>]]></label>
+                    <label><![CDATA[<b>Price</b> <i style="color:red">(required)</i>]]></label>
                     <comment><![CDATA[Use price including tax.]]></comment>
                     <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
                     <validate>required-entry</validate>
@@ -179,7 +179,7 @@
 
                 <field id="attribute_priceperunit" translate="label" type="select" sortOrder="90" showInDefault="1"
                        showInWebsite="1" showInStore="1">
-                    <label><![CDATA[Attribute for <b>Price per Unit</b>]]></label>
+                    <label><![CDATA[<b>Price per Unit</b>]]></label>
                     <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
                 </field>
 

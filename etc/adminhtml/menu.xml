@@ -16,7 +16,7 @@
              resource="Check24Shopping_OrderImport::check24shopping"
              parent="Magento_Sales::sales_operation"
         />
-        <add id="Check24Shopping::productexport" title="CHECK24 Product Export Neu"
+        <add id="Check24Shopping::productexport" title="CHECK24 Product Export"
              module="Check24Shopping_OrderImport"
              sortOrder="100"
              action="check24shopping_orderimport/export/index"
