@@ -8,6 +8,7 @@ use Check24Shopping\OrderImport\Model\Task\ImportOrderTask;
 use Check24Shopping\OrderImport\Model\Task\ProcessCancelTask;
 use Check24Shopping\OrderImport\Model\Task\ProcessOrderTask;
 use Check24Shopping\OrderImport\Model\Task\ProcessReturnTask;
+use Check24Shopping\OrderImport\Model\Task\ReturnRequestTask;
 use Check24Shopping\OrderImport\Model\Task\SendCancelResponseTask;
 use Check24Shopping\OrderImport\Model\Task\SendDispatchNotificationTask;
 use Check24Shopping\OrderImport\Model\Task\SendOrderResponseTask;
@@ -64,6 +65,11 @@ class Cron
         }
         try {
             $this->objectManager->get(ProcessReturnTask::class)->sendNotSendReturns();
+        } catch (CustomerMessageInterface $exception) {
+            $this->logger->error($exception->getCustomerMessage());
+        }
+        try {
+            $this->objectManager->get(ReturnRequestTask::class)->processNotReturnRequest();
         } catch (CustomerMessageInterface $exception) {
             $this->logger->error($exception->getCustomerMessage());
         }

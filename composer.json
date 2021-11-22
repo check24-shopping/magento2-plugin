@@ -2,7 +2,7 @@
     "name": "check24-shopping/magento2-plugin",
     "description": "Import orders from check24",
     "type": "magento2-module",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "authors": [
         {
             "name": "Marco de Leo"
