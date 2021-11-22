@@ -7,7 +7,6 @@ use Check24Shopping\OrderImport\Api\Check24ReturnRepositoryInterface;
 use Check24Shopping\OrderImport\Api\Data\Check24ReturnInterface;
 use Check24Shopping\OrderImport\Api\OrderManagementInterface;
 use Check24Shopping\OrderImport\Helper\Config\ApiConfiguration;
-use Check24Shopping\OrderImport\Helper\Config\OrderConfig;
 use Check24Shopping\OrderImport\Model\OrderMappingRepository;
 use Check24Shopping\OrderImport\Model\OrderPositionMappingRepository;
 use Check24Shopping\OrderImport\Model\Reader\OpenTrans\Entity\OpenTransAddressEntity;
@@ -23,16 +22,11 @@ use Check24Shopping\OrderImport\Model\Writer\OpenTrans\OpenTransReturnResponse;
 use Check24Shopping\OrderImport\Service\Api\ApiConfigurationService;
 use Check24Shopping\OrderImport\Service\Api\ReturnResponseService;
 use Exception;
-use Magento\Sales\Api\OrderManagementInterface as MagentoOrderManagementInterface;
 use Magento\Sales\Api\OrderRepositoryInterface;
 use Magento\Sales\Model\Order;
 
 class ProcessReturnTask
 {
-    /** @var OrderConfig */
-    private $orderConfig;
-    /** @var MagentoOrderManagementInterface */
-    private $magentoOrderManagement;
     /** @var OrderRepositoryInterface */
     private $orderRepository;
     /** @var OrderMappingRepository */
@@ -58,8 +52,6 @@ class ProcessReturnTask
 
     public function __construct(
         OrderRepositoryInterface         $orderRepository,
-        OrderConfig                      $orderConfig,
-        MagentoOrderManagementInterface  $magentoOrderManagement,
         OrderMappingRepository           $orderMappingRepository,
         OrderPositionMappingRepository   $orderPositionMappingRepository,
         Check24ReturnRepositoryInterface $returnRepository,
@@ -69,8 +61,6 @@ class ProcessReturnTask
         ReturnResponseService            $returnResponseService
     )
     {
-        $this->orderConfig = $orderConfig;
-        $this->magentoOrderManagement = $magentoOrderManagement;
         $this->orderRepository = $orderRepository;
         $this->orderMappingRepository = $orderMappingRepository;
         $this->returnRepository = $returnRepository;

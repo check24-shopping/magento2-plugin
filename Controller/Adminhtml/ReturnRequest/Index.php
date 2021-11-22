@@ -1,6 +1,6 @@
 <?php
 
-namespace Check24Shopping\OrderImport\Controller\Adminhtml\OrderImport;
+namespace Check24Shopping\OrderImport\Controller\Adminhtml\ReturnRequest;
 
 use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;
@@ -12,7 +12,7 @@ use Magento\Framework\View\Result\PageFactory;
 
 class Index extends Action implements HttpGetActionInterface
 {
-    const MENU_ID = 'Check24Shopping::OrderImport';
+    const MENU_ID = 'Check24Shopping::ReturnRequest';
 
     /** @var PageFactory */
     protected $resultPageFactory;
@@ -34,7 +34,7 @@ class Index extends Action implements HttpGetActionInterface
     {
         $resultPage = $this->resultPageFactory->create();
         $resultPage->setActiveMenu(static::MENU_ID);
-        $resultPage->getConfig()->getTitle()->prepend(__('CHECK24 API Dokumente'));
+        $resultPage->getConfig()->getTitle()->prepend(__('CHECK24 Rücksendeanfragen'));
 
         return $resultPage;
     }

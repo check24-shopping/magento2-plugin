@@ -1,35 +1,36 @@
 <?php
 
-namespace Check24Shopping\OrderImport\Controller\Adminhtml\OrderImport;
+namespace Check24Shopping\OrderImport\Controller\Adminhtml\ReturnRequest;
 
 use Check24Shopping\OrderImport\Model\Exception\CustomerMessageInterface;
-use Check24Shopping\OrderImport\Model\Task\ProcessReturnTask;
+use Check24Shopping\OrderImport\Model\Task\ProcessCancelTask;
 use Exception;
 use Magento\Backend\App\Action;
 
-class ProcessReturn extends Action
+class ReturnRequest extends Action
 {
-    /** @var ProcessReturnTask */
-    private $returnTask;
+    /** @var ProcessCancelTask */
+    private $processCancelTask;
 
     public function __construct(
         Action\Context    $context,
-        ProcessReturnTask $returnTask
+        ProcessCancelTask $processCancelTask
     )
     {
         parent::__construct($context);
-        $this->returnTask = $returnTask;
+        $this->processCancelTask = $processCancelTask;
     }
 
-    public function execute()
+    public function execute(): void
     {
         try {
-            $returnTaskResult = $this->returnTask->sendNotSendReturns();
-            $failed = $returnTaskResult->getAmountFailedOrders();
+            $processOrderResult = $this->processCancelTask->processNotProcessedOrders();
+            $failed = $processOrderResult->getAmountFailedOrders();
             $this
                 ->messageManager
                 ->addNoticeMessage(
-                    $returnTaskResult->getAmountProcessedOrders() . ' send. ' .
+                    'Cancel response finished. ' .
+                    $processOrderResult->getAmountProcessedOrders() . ' submitted. ' .
                     ($failed ? $failed . ' failed.' : '')
                 );
         } catch (CustomerMessageInterface $exception) {

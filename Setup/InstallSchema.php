@@ -28,6 +28,7 @@ class InstallSchema implements InstallSchemaInterface
             new CancelTable($setup),
             new ReturnTable($setup),
             new DynamicConfigTable($setup),
+            new ReturnRequestTable($setup),
         ];
     }
 }

@@ -77,4 +77,17 @@ class OrderImportProvider implements OrderImportProviderInterface
 
         return $this->orderRepository->getList($searchCriteria);
     }
+
+    public function getReturnRequestList()
+    {
+        $searchCriteria = $this->searchCriteriaBuilder
+            ->addFilter(
+                OrderImportInterface::FIELD_ACTION,
+                OpenTransDocumentInterface::ACTION_RETURN_REQUEST
+            )
+            ->addFilter(OrderImportInterface::FIELD_TYPE, 'orderchange')
+            ->create();
+
+        return $this->orderRepository->getList($searchCriteria);
+    }
 }

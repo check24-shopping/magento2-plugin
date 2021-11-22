@@ -54,7 +54,7 @@ class PluginBtnOrderView
         if (empty($return) === false) {
             return;
         }
-        $sendOrder = $this->_backendUrl->getUrl('check24shopping_orderimport/orderimport/addreturn/', ['orderId' => $subject->getOrderId()]);#/order_id/' . $subject->getOrderId()
+        $sendOrder = $this->_backendUrl->getUrl('check24shopping_orderimport/orderimport/addreturn/', ['orderId' => $subject->getOrderId()]);
         $subject->addButton(
             'check24return',
             [

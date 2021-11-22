@@ -2,6 +2,15 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
 
+    <preference for="Check24Shopping\OrderImport\Api\Data\ReturnRequestInterface"
+                type="Check24Shopping\OrderImport\Model\ReturnRequest"/>
+    <preference for="Check24Shopping\OrderImport\Api\ReturnRequestRepositoryInterface"
+                type="Check24Shopping\OrderImport\Model\ReturnRequestRepository"/>
+    <preference for="Check24Shopping\OrderImport\Api\ReturnRequestProviderInterface"
+                type="Check24Shopping\OrderImport\Model\ReturnRequestProvider"/>
+    <preference for="Check24Shopping\OrderImport\Api\Data\ReturnRequestSearchResultsInterface"
+                type="Magento\Framework\Api\SearchResults"/>
+
     <preference for="Check24Shopping\OrderImport\Api\Data\DynamicConfigInterface"
                 type="Check24Shopping\OrderImport\Model\DynamicConfig"/>
     <preference for="Check24Shopping\OrderImport\Api\DynamicConfigRepositoryInterface"

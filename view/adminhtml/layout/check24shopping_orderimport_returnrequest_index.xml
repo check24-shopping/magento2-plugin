@@ -4,11 +4,11 @@
     <body>
         <referenceBlock name="page.title">
             <action method="setPageTitle">
-                <argument name="title" xsi:type="string">CHECK24 API Dokumente</argument>
+                <argument name="title" xsi:type="string">CHECK24 Rücksendeanfragen</argument>
             </action>
         </referenceBlock>
         <referenceContainer name="content">
-            <uiComponent name="check24shopping_orderimport_listing"/>
+            <uiComponent name="check24shopping_returnrequest_listing"/>
         </referenceContainer>
     </body>
 </page>

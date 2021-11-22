@@ -2,14 +2,21 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="Check24Shopping_OrderImport::check24Shopping_orderimport" title="Check24 order" translate="title"
+        <add id="Check24Shopping::OrderImport" title="CHECK24 API Dokumente" translate="title"
              module="Check24Shopping_OrderImport"
              sortOrder="50"
              action="check24shopping_orderimport/orderimport"
              resource="Check24Shopping_OrderImport::check24shopping"
              parent="Magento_Sales::sales_operation"
         />
-        <add id="Check24Shopping_orderimport::productexport" title="CHECK24 Product Export Neu"
+        <add id="Check24Shopping::ReturnRequest" title="CHECK24 Rücksendeanfragen" translate="title"
+             module="Check24Shopping_OrderImport"
+             sortOrder="51"
+             action="check24shopping_orderimport/returnrequest"
+             resource="Check24Shopping_OrderImport::check24shopping"
+             parent="Magento_Sales::sales_operation"
+        />
+        <add id="Check24Shopping::productexport" title="CHECK24 Product Export Neu"
              module="Check24Shopping_OrderImport"
              sortOrder="100"
              action="check24shopping_orderimport/export/index"

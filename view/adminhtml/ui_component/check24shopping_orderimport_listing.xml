@@ -6,7 +6,8 @@
             <item name="provider" xsi:type="string">
                 check24shopping_orderimport_listing.check24shopping_orderimport_listing_data_source
             </item>
-            <item name="deps" xsi:type="string">check24shopping_orderimport_listing.check24shopping_orderimport_listing_data_source
+            <item name="deps" xsi:type="string">
+                check24shopping_orderimport_listing.check24shopping_orderimport_listing_data_source
             </item>
         </item>
         <item name="spinner" xsi:type="string">check24shopping_orderimport_columns</item>
@@ -47,11 +48,17 @@
                 <item name="class" xsi:type="string">primary</item>
                 <item name="url" xsi:type="string">*/*/cancelresponse</item>
             </item>
-            <item name="process return" xsi:type="array">
+            <item name="process return request" xsi:type="array">
                 <item name="name" xsi:type="string">response</item>
-                <item name="label" xsi:type="string" translate="true">process return</item>
+                <item name="label" xsi:type="string" translate="true">process return request</item>
                 <item name="class" xsi:type="string">primary</item>
-                <item name="url" xsi:type="string">*/*/processreturn</item>
+                <item name="url" xsi:type="string">*/*/processreturnrequest</item>
+            </item>
+            <item name="send return" xsi:type="array">
+                <item name="name" xsi:type="string">response</item>
+                <item name="label" xsi:type="string" translate="true">send return</item>
+                <item name="class" xsi:type="string">primary</item>
+                <item name="url" xsi:type="string">*/*/sendreturn</item>
             </item>
         </item>
     </argument>
@@ -107,25 +114,7 @@
                 </item>
             </argument>
         </component>
-        <filterSearch name="fulltext"/>
         <filters name="listing_filters"/>
-        <!--<massaction name="listing_massaction">
-            <argument name="data" xsi:type="array">
-                <item name="config" xsi:type="array">
-                    <item name="selectProvider" xsi:type="string">check24shopping_orderimport_order_grid.check24shopping_orderimport_order_grid.check24shopping_order_columns.ids</item>
-                    <item name="indexField" xsi:type="string">id</item>
-                </item>
-            </argument>
-            <action name="retry">
-                <argument name="data" xsi:type="array">
-                    <item name="config" xsi:type="array">
-                        <item name="type" xsi:type="string">retry</item>
-                        <item name="label" xsi:type="string" translate="true">Retry Processing</item>
-                        <item name="url" xsi:type="url" path="check24shopping_orderimport/order/retry"/>
-                    </item>
-                </argument>
-            </action>
-        </massaction>-->
         <paging name="listing_paging">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
@@ -163,15 +152,6 @@
                 </item>
             </item>
         </argument>
-        <selectionsColumn name="ids">
-            <argument name="data" xsi:type="array">
-                <item name="config" xsi:type="array">
-                    <item name="resizeEnabled" xsi:type="boolean">false</item>
-                    <item name="resizeDefaultWidth" xsi:type="string">55</item>
-                    <item name="indexField" xsi:type="string">id</item>
-                </item>
-            </argument>
-        </selectionsColumn>
         <column name="id">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
@@ -181,7 +161,8 @@
                 </item>
             </argument>
         </column>
-        <column name="check24shopping_order_id" class="Check24Shopping\OrderImport\Ui\Component\Listing\Column\Order\Check24OrderId">
+        <column name="check24shopping_order_id"
+                class="Check24Shopping\OrderImport\Ui\Component\Listing\Column\Order\Check24OrderId">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="bodyTmpl" xsi:type="string">ui/grid/cells/html</item>
@@ -215,7 +196,6 @@
         <column name="error" class="Check24Shopping\OrderImport\Ui\Component\Listing\Column\Order\Error">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
-                    <item name="filter" xsi:type="string">text</item>
                     <item name="bodyTmpl" xsi:type="string">ui/grid/cells/html</item>
                     <item name="label" xsi:type="string" translate="true">Error</item>
                 </item>

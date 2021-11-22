@@ -3,6 +3,7 @@
 namespace Check24Shopping\OrderImport\Model\Task;
 
 use Check24Shopping\OrderImport\Api\Data\OrderImportInterface;
+use Check24Shopping\OrderImport\Api\DynamicConfigRepositoryInterface;
 use Check24Shopping\OrderImport\Api\OrderImportProviderInterface;
 use Check24Shopping\OrderImport\Api\OrderImportRepositoryInterface;
 use Check24Shopping\OrderImport\Helper\Config\OrderConfig;
@@ -22,8 +23,6 @@ class ProcessCancelTask
 {
     /** @var OrderImportProviderInterface */
     private $orderProvider;
-    /** @var OrderConfig */
-    private $orderConfig;
     /** @var MagentoOrderManagementInterface */
     private $magentoOrderManagement;
     /** @var OrderImportRepositoryInterface */
@@ -38,26 +37,30 @@ class ProcessCancelTask
      * @var OrderRepositoryInterface
      */
     private $magentoOrderRepository;
+    /**
+     * @var DynamicConfigRepositoryInterface
+     */
+    private $dynamicConfigRepository;
 
     public function __construct(
         OrderImportProviderInterface    $orderProvider,
         OrderImportRepositoryInterface  $orderRepository,
-        OrderConfig                     $orderConfig,
         MagentoOrderManagementInterface $magentoOrderManagement,
         ShipmentRepositoryInterface     $shipmentRepository,
         SearchCriteriaBuilder           $searchCriteriaBuilder,
         OrderMappingRepository          $orderMappingRepository,
-        OrderRepositoryInterface $magentoOrderRepository
+        OrderRepositoryInterface $magentoOrderRepository,
+        DynamicConfigRepositoryInterface $dynamicConfigRepository
     )
     {
         $this->orderProvider = $orderProvider;
-        $this->orderConfig = $orderConfig;
         $this->magentoOrderManagement = $magentoOrderManagement;
         $this->orderRepository = $orderRepository;
         $this->orderMappingRepository = $orderMappingRepository;
         $this->shipmentRepository = $shipmentRepository;
         $this->searchCriteriaBuilder = $searchCriteriaBuilder;
         $this->magentoOrderRepository = $magentoOrderRepository;
+        $this->dynamicConfigRepository = $dynamicConfigRepository;
     }
 
     public function processNotProcessedOrders(): ProcessOrderResult
@@ -72,6 +75,10 @@ class ProcessCancelTask
             try {
                 $document = new OpenTransOrderDocument($order->getContent());
                 if ($document->getAction() !== OpenTransDocumentInterface::ACTION_CANCELLATION_REQUEST) {
+                    continue;
+                }
+                if ($this->dynamicConfigRepository->load()->getProcessCancel() === false) {
+                    $this->orderRepository->delete($order);
                     continue;
                 }
                 $mappingOrder = $this->orderMappingRepository->findByCheck24OrderId($order->getCheck24OrderId());
@@ -91,7 +98,7 @@ class ProcessCancelTask
                         ->get($mappingOrder->getMagentoOrderId());
                     $magentoOrder
                         ->addCommentToStatusHistory(
-                            'Order cancelled by CHECK24 request',
+                            'Order cancelled by CHECK24 request'
                         );
                     $this->magentoOrderRepository->save($magentoOrder);
                 } else {
