@@ -70,7 +70,6 @@ class ProcessCancelTask
             return new ProcessOrderResult(0, 0);
         }
         $ordersProcessed = $failedOrders = 0;
-        /** @var OrderImportInterface $order */
         foreach ($orderList->getItems() as $order) {
             try {
                 $document = new OpenTransOrderDocument($order->getContent());
@@ -104,7 +103,8 @@ class ProcessCancelTask
                 } else {
                     $failedOrders++;
                 }
-                $this->orderRepository->delete($order);
+                $order->setStatus(1);
+                $this->orderRepository->save($order);
             } catch (Exception $e) {
                 $failedOrders++;
                 $order

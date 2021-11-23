@@ -72,6 +72,7 @@ class OrderImportProvider implements OrderImportProviderInterface
                 OrderImportInterface::FIELD_ACTION,
                 OpenTransDocumentInterface::ACTION_CANCELLATION_REQUEST
             )
+            ->addFilter(OrderImportInterface::FIELD_STATUS, 0)
             ->addFilter(OrderImportInterface::FIELD_TYPE, 'orderchange')
             ->create();
 

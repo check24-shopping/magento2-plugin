@@ -40,7 +40,7 @@ final class OpenTransOrderDocument implements OpenTransDataOrderInterface
 
     public function getOrderId(): string
     {
-        return (string)$this->getFirstTagValue('ORDER_ID');
+        return $this->getFirstTagValue('ORDER_ID');
     }
 
     public function getShippingAmount(): float

@@ -33,8 +33,6 @@ class SendCancelResponseTask
     private $check24CancelProvider;
     /** @var Check24CancelRepositoryInterface */
     private $check24CancelRepository;
-    /** @var StoreManagerInterface */
-    private $storeManager;
     /**
      * @var OrderMappingRepository
      */
@@ -63,7 +61,6 @@ class SendCancelResponseTask
     public function __construct(
         Check24CancelProviderInterface   $check24CancelProvider,
         Check24CancelRepositoryInterface $check24CancelRepository,
-        StoreManagerInterface            $storeManager,
         OrderMappingRepository           $orderMappingRepository,
         OrderManagementInterface         $orderManagement,
         OrderPositionMappingRepository   $orderPositionMappingRepository,
@@ -74,7 +71,6 @@ class SendCancelResponseTask
     {
         $this->check24CancelProvider = $check24CancelProvider;
         $this->check24CancelRepository = $check24CancelRepository;
-        $this->storeManager = $storeManager;
         $this->orderMappingRepository = $orderMappingRepository;
         $this->orderPositionMappingRepository = $orderPositionMappingRepository;
         $this->orderManagement = $orderManagement;
