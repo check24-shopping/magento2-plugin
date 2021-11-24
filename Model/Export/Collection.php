@@ -45,8 +45,8 @@ class Collection extends DataCollection
     {
         $exportFile = ExportProductsTask::EXPORT_FILE;
 
-        $path = 'pub' . DS . ExportProductsTask::EXPORT_BASEDIR . DS .
-            ExportProductsTask::EXPORT_FOLDER . DS;
+        $path = 'pub' . DIRECTORY_SEPARATOR . ExportProductsTask::EXPORT_BASEDIR . DIRECTORY_SEPARATOR .
+            ExportProductsTask::EXPORT_FOLDER . DIRECTORY_SEPARATOR;
 
         $fileName = sprintf($exportFile, $code);
         $fileUrl = $url . $path . $fileName;
@@ -57,7 +57,7 @@ class Collection extends DataCollection
     protected function getExportedAt($code)
     {
         $filePath = $this->directoryList->getPath(ExportProductsTask::EXPORT_BASEDIR)
-            . DS . ExportProductsTask::EXPORT_FOLDER . DS .
+            . DIRECTORY_SEPARATOR . ExportProductsTask::EXPORT_FOLDER . DIRECTORY_SEPARATOR .
             sprintf(ExportProductsTask::EXPORT_FILE, $code);
 
         if (!file_exists($filePath)) {

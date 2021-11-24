@@ -112,6 +112,8 @@ class ProcessOrderTask
                     ->save($magentoOrder, $orderDocument);
                 $ordersProcessed++;
             } catch (Exception $e) {
+                var_dump($e->getTraceAsString());
+                var_dump($e->getLine());
                 $failedOrders++;
                 $order
                     ->setErrorMessage($e->getMessage());

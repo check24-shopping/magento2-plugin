@@ -15,6 +15,6 @@ class ImportCron
 
     public function toOptionArray(): array
     {
-        return Cron::toOptionArray($this->currentSetting);
+        return Cron::toOptionArray($this->currentSetting ?: '');
     }
 }

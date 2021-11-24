@@ -59,7 +59,11 @@ class PluginBtnOrderView
             'check24return',
             [
                 'label' => __('Rücksendung an Check24 melden'),
-                'onclick' => "setLocation('" . $sendOrder . "')",
+
+                'onclick' => 'deleteConfirm(\'' . __(
+                        'Mit Klick auf "OK" bestätigen Sie, dass Sie die Rücksendung erhalten haben ' .
+                        'und dem Kunden die Gutschrift ausbezahlt werden kann.'
+                    ) . '\', \'' . $sendOrder . '\')',
                 'class' => __('custom-button'),
             ]
         );

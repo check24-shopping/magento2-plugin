@@ -16,9 +16,6 @@ use Magento\Framework\App\Filesystem\DirectoryList;
 use Magento\Framework\Message\ManagerInterface;
 use Magento\Store\Model\StoreManagerInterface;
 
-if (!defined('DS')) {
-    define('DS', DIRECTORY_SEPARATOR);
-}
 
 class ExportProductsTask
 {
@@ -164,13 +161,13 @@ class ExportProductsTask
         $pages = $productCollection->getLastPageNumber();
         $currentPage = 1;
 
-        $path = $this->directoryList->getPath(self::EXPORT_BASEDIR) . DS . self::EXPORT_FOLDER;
+        $path = $this->directoryList->getPath(self::EXPORT_BASEDIR) . DIRECTORY_SEPARATOR . self::EXPORT_FOLDER;
 
         if (!file_exists($path)) {
             mkdir($path, 0777, true);
         }
 
-        $fileName = $path . DS . $file;
+        $fileName = $path . DIRECTORY_SEPARATOR . $file;
 
         // Write CSV header
         $this->saveData($fileName, [array_keys($this->exportConfig->getCsvFields())]);
