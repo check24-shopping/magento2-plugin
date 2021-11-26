@@ -29,7 +29,7 @@ class DocumentTrackingTable implements TableInterface
                 Table::TYPE_INTEGER,
                 null,
                 [],
-                'Check24 Document ID'
+                'CHECK24 Document ID'
             )
             ->addIndex(
                 'IDX_' . DocumentTrackingInterface::FIELD_DOCUMENT_ID,

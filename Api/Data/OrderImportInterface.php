@@ -15,6 +15,7 @@ interface OrderImportInterface
     const FIELD_STATUS = 'status';
     const FIELD_TYPE = 'type';
     const FIELD_ACTION = 'action';
+    const FIELD_ERROR_DETAILS = 'error_details';
 
     public function setId($id): self;
 
@@ -47,6 +48,10 @@ interface OrderImportInterface
     public function setErrorMessage($errorMessage): self;
 
     public function getErrorMessage();
+
+    public function setErrorDetails($errorDetails): self;
+
+    public function getErrorDetails();
 
     public function setType(string $type): self;
 

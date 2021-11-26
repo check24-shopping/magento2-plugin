@@ -2,7 +2,6 @@
 
 namespace Check24Shopping\OrderImport\Model\Task;
 
-use Check24Shopping\OrderImport\Api\Data\OrderImportInterface;
 use Check24Shopping\OrderImport\Api\OrderImportProviderInterface;
 use Check24Shopping\OrderImport\Api\OrderImportRepositoryInterface;
 use Check24Shopping\OrderImport\Api\OrderManagementInterface;
@@ -24,7 +23,6 @@ use Magento\Quote\Model\Quote;
 use Magento\Quote\Model\Quote\Address;
 use Magento\Quote\Model\QuoteRepository;
 use Magento\Sales\Api\Data\OrderInterface;
-use Magento\Sales\Api\OrderManagementInterface as MagentoOrderManagementInterface;
 use Magento\Sales\Api\OrderRepositoryInterface as MagentoOrderRepositoryInterface;
 use Magento\Store\Api\Data\StoreInterface;
 use Magento\Store\Model\App\Emulation as AppEmulation;
@@ -53,8 +51,6 @@ class ProcessOrderTask
     private $quoteRepository;
     /** @var MagentoOrderRepositoryInterface */
     private $magentoOrderRepository;
-    /** @var MagentoOrderManagementInterface */
-    private $magentoOrderManagement;
     /** @var OrderImportRepositoryInterface */
     private $orderRepository;
     /** @var NewMappingService */
@@ -72,7 +68,6 @@ class ProcessOrderTask
         OrderConfig                     $orderConfig,
         QuoteRepository                 $quoteRepository,
         MagentoOrderRepositoryInterface $magentoOrderRepository,
-        MagentoOrderManagementInterface $magentoOrderManagement,
         NewMappingService               $newMappingService
     )
     {
@@ -86,7 +81,6 @@ class ProcessOrderTask
         $this->orderConfig = $orderConfig;
         $this->quoteRepository = $quoteRepository;
         $this->magentoOrderRepository = $magentoOrderRepository;
-        $this->magentoOrderManagement = $magentoOrderManagement;
         $this->orderRepository = $orderRepository;
         $this->newMappingService = $newMappingService;
     }
@@ -98,7 +92,6 @@ class ProcessOrderTask
             return new ProcessOrderResult(0, 0);
         }
         $ordersProcessed = $failedOrders = 0;
-        /** @var OrderImportInterface $order */
         foreach ($orderList->getItems() as $order) {
             try {
                 $orderDocument = new OpenTransOrderDocument($order->getContent());
@@ -112,11 +105,12 @@ class ProcessOrderTask
                     ->save($magentoOrder, $orderDocument);
                 $ordersProcessed++;
             } catch (Exception $e) {
-                var_dump($e->getTraceAsString());
-                var_dump($e->getLine());
                 $failedOrders++;
                 $order
-                    ->setErrorMessage($e->getMessage());
+                    ->setErrorMessage($e->getMessage())
+                    ->setErrorDetails(
+                        $e->getFile() . ':(' . $e->getLine() . ")\n" . $e->getTraceAsString()
+                    );
             } finally {
                 $this->orderRepository->save($order);
             }

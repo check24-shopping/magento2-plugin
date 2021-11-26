@@ -103,6 +103,18 @@ class OrderImport extends AbstractModel implements OrderImportInterface
         return $this->getData(self::FIELD_ERROR_MESSAGE);
     }
 
+    public function setErrorDetails($errorMessage): OrderImportInterface
+    {
+        $this->setData(self::FIELD_ERROR_DETAILS, $errorMessage);
+
+        return $this;
+    }
+
+    public function getErrorDetails()
+    {
+        return $this->getData(self::FIELD_ERROR_DETAILS);
+    }
+
     public function setType(string $type): OrderImportInterface
     {
         $this->setData(self::FIELD_TYPE, $type);

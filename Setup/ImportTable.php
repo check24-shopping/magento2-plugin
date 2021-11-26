@@ -37,7 +37,7 @@ class ImportTable implements TableInterface
                 Table::TYPE_TEXT,
                 25,
                 [],
-                'CHECK24 Order ID'
+                'Document type'
             )
             ->addColumn(
                 OrderImportInterface::FIELD_ACTION,

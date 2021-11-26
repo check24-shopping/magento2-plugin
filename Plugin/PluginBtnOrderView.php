@@ -58,8 +58,7 @@ class PluginBtnOrderView
         $subject->addButton(
             'check24return',
             [
-                'label' => __('Rücksendung an Check24 melden'),
-
+                'label' => __('Rücksendung an CHECK24 melden'),
                 'onclick' => 'deleteConfirm(\'' . __(
                         'Mit Klick auf "OK" bestätigen Sie, dass Sie die Rücksendung erhalten haben ' .
                         'und dem Kunden die Gutschrift ausbezahlt werden kann.'

@@ -8,7 +8,7 @@ use Magento\Backend\App\Action;
 use Magento\Framework\Controller\ResultFactory;
 use Magento\Framework\Exception\NoSuchEntityException;
 
-class View extends Action
+class ErrorView extends Action
 {
     /** @var OrderImportRepositoryInterface */
     private $orderRepository;
@@ -33,8 +33,10 @@ class View extends Action
 
             $resultPage = $this->resultFactory->create(ResultFactory::TYPE_RAW);
             $resultPage
-                ->setHeader('Content-Type', 'text/xml')
-                ->setContents($order->getContent());
+                ->setHeader('Content-Type', 'text/html')
+                ->setContents(
+                    '<pre>' . $order->getErrorDetails() . '</pre>'
+                );
 
             return $resultPage;
 

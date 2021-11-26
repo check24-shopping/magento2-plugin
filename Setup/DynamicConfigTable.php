@@ -28,35 +28,35 @@ class DynamicConfigTable implements TableInterface
                 Table::TYPE_BOOLEAN,
                 null,
                 [],
-                'Process cancel documents from Check24'
+                'Process cancel documents from CHECK24'
             )
             ->addColumn(
                 DynamicConfigInterface::FIELD_SEND_CANCEL,
                 Table::TYPE_BOOLEAN,
                 null,
                 [],
-                'Send canceled orders to Check24'
+                'Send canceled orders to CHECK24'
             )
             ->addColumn(
                 DynamicConfigInterface::FIELD_SEND_DISPATCH,
                 Table::TYPE_BOOLEAN,
                 null,
                 [],
-                'Send dispatch notification to Check24'
+                'Send dispatch notification to CHECK24'
             )
             ->addColumn(
                 DynamicConfigInterface::FIELD_SEND_RETURN,
                 Table::TYPE_BOOLEAN,
                 null,
                 [],
-                'Send return documents to Check24'
+                'Send return documents to CHECK24'
             )
             ->addColumn(
                 DynamicConfigInterface::FIELD_PROCESS_RETURN,
                 Table::TYPE_BOOLEAN,
                 null,
                 [],
-                'Process return documents from Check24'
+                'Process return documents from CHECK24'
             );
     }
 
