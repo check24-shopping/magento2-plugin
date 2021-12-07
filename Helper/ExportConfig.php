@@ -53,6 +53,12 @@ class ExportConfig extends AbstractHelper
     /** @var string config path */
     const CONFIG_PATH_PRODUCTEXPORT_PRICESHIPPING = 'check24shopping_orderimport/productexport_attributes/attribute_priceshipping';
     /** @var string config path */
+    const CONFIG_PATH_PRODUCTEXPORT_ADDS_1 = 'check24shopping_orderimport/productexport_attributes/attribute_adds1';
+    /** @var string config path */
+    const CONFIG_PATH_PRODUCTEXPORT_ADDS_2 = 'check24shopping_orderimport/productexport_attributes/attribute_adds2';
+    /** @var string config path */
+    const CONFIG_PATH_PRODUCTEXPORT_ADDS_3 = 'check24shopping_orderimport/productexport_attributes/attribute_adds3';
+    /** @var string config path */
     const CONFIG_PATH_PRODUCTEXPORT_WEIGHT = 'check24shopping_orderimport/productexport_attributes/attribute_weight';
     /** @var string scope to use */
     protected $scopeLevel;
@@ -176,6 +182,12 @@ class ExportConfig extends AbstractHelper
                 'delivery_time' => $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_DELIVERYTIME,
                     $this->scopeLevel, $storeId),
                 'price_shipping' => $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_PRICESHIPPING,
+                    $this->scopeLevel, $storeId),
+                'offerid_1' => $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_ADDS_1,
+                    $this->scopeLevel, $storeId),
+                'offerid_2' => $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_ADDS_2,
+                    $this->scopeLevel, $storeId),
+                'offerid_3' => $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_ADDS_3,
                     $this->scopeLevel, $storeId)
             );
             $this->processSerialized($serialized);
@@ -307,7 +319,10 @@ class ExportConfig extends AbstractHelper
             'delivery_time' => '',
             'price_shipping' => '',
             'stock' => '',
-            'weight' => ''
+            'weight' => '',
+            'offerid_1' => '',
+            'offerid_2' => '',
+            'offerid_3' => '',
         );
     }
 

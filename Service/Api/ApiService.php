@@ -2,7 +2,6 @@
 
 namespace Check24Shopping\OrderImport\Service\Api;
 
-use Check24Shopping\OrderImport\Api\DynamicConfigRepositoryInterface;
 use Check24Shopping\OrderImport\Helper\Config\ApiConfiguration;
 use GuzzleHttp\ClientFactory;
 use Magento\Framework\App\ProductMetadataInterface;
