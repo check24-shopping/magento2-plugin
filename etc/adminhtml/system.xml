@@ -202,32 +202,21 @@
                         attribute.
                     </comment>
                 </field>
-                <field id="attribute_adds1" translate="label,comment" type="text" sortOrder="120"
-                       showInDefault="1" showInWebsite="1" showInStore="1">
+
+                <field id="attribute_adds1" translate="label" type="select" sortOrder="120" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
                     <label><![CDATA[<b>Price ADDS 1</b>]]></label>
-                    <frontend_model>Check24Shopping\OrderImport\Block\Adminhtml\System\Config\Adds1</frontend_model>
-                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
-                    <comment>Select attribute or define default text. Default text will override the configured
-                        attribute.
-                    </comment>
+                    <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
                 </field>
-                <field id="attribute_adds2" translate="label,comment" type="text" sortOrder="130"
-                       showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label><![CDATA[<b>Price ADDS 2</b>]]></label>
-                    <frontend_model>Check24Shopping\OrderImport\Block\Adminhtml\System\Config\Adds2</frontend_model>
-                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
-                    <comment>Select attribute or define default text. Default text will override the configured
-                        attribute.
-                    </comment>
+                <field id="attribute_adds2" translate="label" type="select" sortOrder="120" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label><![CDATA[<b>Price ADDS 1</b>]]></label>
+                    <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
                 </field>
-                <field id="attribute_adds3" translate="label,comment" type="text" sortOrder="140"
-                       showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label><![CDATA[<b>Price ADDS 3</b>]]></label>
-                    <frontend_model>Check24Shopping\OrderImport\Block\Adminhtml\System\Config\Adds3</frontend_model>
-                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
-                    <comment>Select attribute or define default text. Default text will override the configured
-                        attribute.
-                    </comment>
+                <field id="attribute_adds3" translate="label" type="select" sortOrder="120" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label><![CDATA[<b>Price ADDS 1</b>]]></label>
+                    <source_model>Check24Shopping\OrderImport\Model\Adminhtml\System\Config\Source\Attribute</source_model>
                 </field>
             </group>
 

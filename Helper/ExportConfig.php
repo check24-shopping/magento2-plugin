@@ -108,7 +108,7 @@ class ExportConfig extends AbstractHelper
      */
     public function getCronSchedule($storeId = null)
     {
-        return $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_CRON, $this->scopeLevel, $storeId);
+        return $this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_CRON, $storeId);
     }
 
     /**
@@ -118,7 +118,7 @@ class ExportConfig extends AbstractHelper
      */
     public function useStockFilter($storeId = null)
     {
-        return $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_INSTOCK, $this->scopeLevel, $storeId);
+        return $this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_INSTOCK, $storeId);
     }
 
     /**
@@ -128,7 +128,7 @@ class ExportConfig extends AbstractHelper
      */
     public function getProductIdentifier($storeId = null)
     {
-        return $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTID, $this->scopeLevel, $storeId);
+        return $this->getConfigValue(self::CONFIG_PATH_PRODUCTID, $storeId);
     }
 
     public function resetConfigs()
@@ -157,12 +157,19 @@ class ExportConfig extends AbstractHelper
                 'special_to_date'
             );
 
-            foreach ($this->getMappedAttributes($storeId) as $c24attr => $mageAttr) {
+            foreach ($this->getMappedAttributes($storeId) as $mageAttr) {
                 $this->_usedAttributes[] = $mageAttr;
             }
         }
 
         return $this->_usedAttributes;
+    }
+
+    private function getConfigValue($configKey, $storeId)
+    {
+        return $this
+            ->scopeConfig
+            ->getValue($configKey, $this->scopeLevel, $storeId);
     }
 
     /**
@@ -172,58 +179,44 @@ class ExportConfig extends AbstractHelper
      */
     public function getMappedAttributes($storeId = null)
     {
-
         if (!$this->_mappedAttributes) {
-
             // Process serialized array configs (product attribute <> default value)
-            $serialized = array(
-                'manufacturer' => $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_MANUFACTURER,
-                    $this->scopeLevel, $storeId),
-                'delivery_time' => $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_DELIVERYTIME,
-                    $this->scopeLevel, $storeId),
-                'price_shipping' => $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_PRICESHIPPING,
-                    $this->scopeLevel, $storeId),
-                'offerid_1' => $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_ADDS_1,
-                    $this->scopeLevel, $storeId),
-                'offerid_2' => $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_ADDS_2,
-                    $this->scopeLevel, $storeId),
-                'offerid_3' => $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_ADDS_3,
-                    $this->scopeLevel, $storeId)
-            );
+            $serialized = [
+                'manufacturer' => $this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_MANUFACTURER, $storeId),
+                'delivery_time' => $this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_DELIVERYTIME, $storeId),
+                'price_shipping' => $this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_PRICESHIPPING, $storeId),
+            ];
             $this->processSerialized($serialized);
 
-            $this->_mappedAttributes['description'] =
-                $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_DESCRIPTION, $this->scopeLevel, $storeId);
-            $this->_mappedAttributes['name'] =
-                $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_NAME, $this->scopeLevel, $storeId);
-
-            $this->_mappedAttributes['ean'] =
-                $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_EAN, $this->scopeLevel, $storeId);
-
-            $this->_mappedAttributes['price'] =
-                $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_PRICE, $this->scopeLevel, $storeId);
+            $this->_mappedAttributes = [
+                'adds1' => $this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_ADDS_1, $storeId),
+                'adds2' => $this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_ADDS_2, $storeId),
+                'adds3' => $this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_ADDS_3, $storeId),
+                'description' => $this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_DESCRIPTION, $storeId),
+                'name' => $this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_NAME, $storeId),
+                'ean' => $this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_EAN, $storeId),
+                'price' => $this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_PRICE, $storeId),
+            ];
 
             // Optional attribute configurations
-            if ($this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_MPNR, $this->scopeLevel, $storeId)) {
+            if ($this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_MPNR, $storeId)) {
                 $this->_mappedAttributes['mpnr'] =
-                    $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_MPNR, $this->scopeLevel, $storeId);
+                    $this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_MPNR, $storeId);
             }
 
-            if ($this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_PZN, $this->scopeLevel, $storeId)) {
+            if ($this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_PZN, $storeId)) {
                 $this->_mappedAttributes['pzn'] =
-                    $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_PZN, $this->scopeLevel, $storeId);
+                    $this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_PZN, $storeId);
             }
 
-            if ($this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_PRICEPERUNIT, $this->scopeLevel,
-                $storeId)) {
+            if ($this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_PRICEPERUNIT, $storeId)) {
                 $this->_mappedAttributes['price_perunit'] =
-                    $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_PRICEPERUNIT, $this->scopeLevel,
-                        $storeId);
+                    $this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_PRICEPERUNIT, $storeId);
             }
 
-            if ($this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_WEIGHT, $this->scopeLevel, $storeId)) {
+            if ($this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_WEIGHT, $storeId)) {
                 $this->_mappedAttributes['weight'] =
-                    $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_WEIGHT, $this->scopeLevel, $storeId);
+                    $this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_WEIGHT, $storeId);
             }
         }
 
@@ -320,9 +313,9 @@ class ExportConfig extends AbstractHelper
             'price_shipping' => '',
             'stock' => '',
             'weight' => '',
-            'offerid_1' => '',
-            'offerid_2' => '',
-            'offerid_3' => '',
+            'adds1' => '',
+            'adds2' => '',
+            'adds3' => '',
         );
     }
 
@@ -349,7 +342,7 @@ class ExportConfig extends AbstractHelper
     public function getIncludedAttributeSetIds($storeId = null)
     {
         $attributeSetIds = explode(',',
-            $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_ATTRIBUTESETS, $this->scopeLevel, $storeId));
+            $this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_ATTRIBUTESETS, $storeId));
 
         if (in_array('all', $attributeSetIds)) {
             return array();
@@ -373,7 +366,7 @@ class ExportConfig extends AbstractHelper
      */
     public function getIncludedCategoryIds($storeId = null)
     {
-        return $this->scopeConfig->getValue(self::CONFIG_PATH_PRODUCTEXPORT_CATEGORIES, $this->scopeLevel, $storeId);
+        return $this->getConfigValue(self::CONFIG_PATH_PRODUCTEXPORT_CATEGORIES, $storeId);
     }
 
     /**
