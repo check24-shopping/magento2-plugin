@@ -40,4 +40,6 @@ $ bin/magento cache:flush
 
 ### Feedback / Fragen ###
 
+[Hier finden Sie die aktuelle Dokumentation zum Magento2-Plugin](Documentation/CHECK24-Shopping_Magento-2-Plugin_Dokumentation_1.4.pdf)
+
 ecommerce-plugins-shopping@check24.de
