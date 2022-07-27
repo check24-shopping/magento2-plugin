@@ -20,7 +20,7 @@ class Logger extends \Monolog\Logger
         $this->orderConfig = $orderConfig;
     }
 
-    public function addRecord($level, $message, array $context = [])
+    public function addRecord(int $level, string $message, array $context = [], ?\Monolog\DateTimeImmutable $datetime = NULL): bool
     {
         if ($level < 300 && !$this->orderConfig->isDebugEnabled()) {
             return false;
